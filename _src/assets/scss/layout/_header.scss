@@ -1,0 +1,14 @@
+.header {
+ display: flex;
+ justify-content: center;
+}
+.page__title {
+  width: 250px;
+  height: 1px;
+  padding-top: 62px;
+  overflow: hidden;
+  background-image: url('../images/tarjetas-molonas.png');
+  background-size: cover;
+  margin-top: 95px;
+}
+
