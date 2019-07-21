@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35.4px;
+}
+.main__title {
+font-family: $font-family--title;
+font-size: 19.2px;
+color: $color--dull-orange;
+}
+.main__subtitle {
+  width: 264.8px;
+  color: $color--dark-green-blue;
+  font-size: 12.8px;
+  text-align: center;
+  margin: 0 28px 17.8px;
+}
