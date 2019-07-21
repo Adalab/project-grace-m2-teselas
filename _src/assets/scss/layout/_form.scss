@@ -31,24 +31,37 @@
     list-style: none;
 }
 
-.palette1,
-.palette2,
-.palette3 {
+.design__colors-list {
     list-style: none;
 }
 
-.palette1 {
+.palette--colors {
+    list-style: none;
+}
+
+.palette--colors {
     display: flex;
 }
 
-.pal-1 {
-    color-1,
-    color-2,
-    color-3 {
-        width: 30px;
-        height: 25px;
-        background-color: black;
-    }
+.palette-1 {
+    display: flex;
+}
+
+.bp {
+    width: 30px;
+    height: 25px;
+}
+
+.p1--color1 {
+    background-color: $color--dark-green-blue;
+}
+
+.p1--color2 {
+    background-color: $color--dirty-blue;
+}
+
+.p1--color3 {
+    background-color: $color--hospital-green;
 }
 
 .hidden {

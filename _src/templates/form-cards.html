@@ -41,71 +41,53 @@
 
                 <!-- DESIGN -->
                 <fieldset class="design--card">
-                    <legend>diseña</legend>
-                    <div class="design__tab">diseña</div>
+                    <legend class="hidden">diseña</legend>
+                    <!-- DESIGN TITLE -->
+                    <div class="design__title">diseña</div>
+                    <!-- PALETTE LIST -->
                     <div class="design__form">
                         <p>colores</p>
-                        <div>
-                            <label for="palette1">
-                        <input
-                          id="palette1"
-                          type="radio"
-                          value=""
-                          name="palettes"
-                        />
-                      </label>
-                            <ul class="palette1">
-                                <li class="pal-1 color-1"></li>
-                                <li class="pal-1 color-2"></li>
-                                <li class="pal-1 color-3"></li>
+                        <div class="design__form--colors">
+
+                            <!-- ALL PALETTES LIST -->
+                            <ul class="design__colors-list">
+
+                                <!-- PALETTE 1 -->
+                                <li class="palette-1">
+                                    <label class="hidden" for="blue--palette">blue palette</label>
+                                    <input class="radio__palette" type="radio" name="palette" value="1">
+                                    <ul class="palette--colors">
+                                        <li class="bp p1--color1"></li>
+                                        <li class="bp p1--color2"></li>
+                                        <li class="bp p1--color3"></li>
+                                    </ul>
+                                </li>
+
+                                <!-- PALETTE 2 -->
+                                <li class="palette-2"></li>
+
+                                <!-- PALETTE 3 -->
+                                <li class="palette-3"></li>
+
                             </ul>
                         </div>
-                        <div>
-                            <label for="palette2">
-                        <input
-                          id="palette2"
-                          type="radio"
-                          value=""
-                          name="palettes"
-                        />
-                        <div class="palette2">
-                            <div class="pal-2 color-1"></div>
-                            <div class="pal-2 color-2"></div>
-                            <div class="pal-2 color-3"></div>
-                          </div>
-                      </label>
-                        </div>
-                        <div>
-                            <label for="palette3">
-                        <input
-                          id="palette3"
-                          type="radio"
-                          value=""
-                          name="palettes"
-                        />
-                        <div class="palette3">
-                            <div class="pal-3 color-1"></div>
-                            <div class="pal-3 color-2"></div>
-                            <div class="pal-3 color-3"></div>
-                          </div>
-                      </label>
-                        </div>
                     </div>
-                </fieldset>
+        </div>
+        </fieldset>
 
-                <!-- FILL -->
-                <fieldset class="fill--card">
-                    <legend>rellena</legend>
+        <!-- FILL -->
+        <fieldset class="fill--card">
+            <legend>rellena</legend>
 
 
-                </fieldset>
+        </fieldset>
 
-                <!-- SHARE -->
-                <fieldset class="share--card">
-                    <legend>comparte</legend>
+        <!-- SHARE -->
+        <fieldset class="share--card">
+            <legend>comparte</legend>
 
-                </fieldset>
-            </form>
+        </fieldset>
+        </form>
         </div>
     </main>
 
