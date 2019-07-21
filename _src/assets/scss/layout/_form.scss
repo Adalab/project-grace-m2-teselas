@@ -3,7 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
 }
 
 .preview__box {
@@ -18,7 +17,7 @@
 
 .reset__button {
     align-self: flex-start;
-    margin-left: 39%;
+    margin-left: auto;
 }
 
 .card__box {
@@ -31,23 +30,41 @@
     list-style: none;
 }
 
+.options__box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.design--card,
+.fill--card,
+.share--card {
+    border: none;
+}
+
+.design__form {
+    display: flex;
+    justify-content: space-between;
+}
+
 .design__colors-list {
     list-style: none;
 }
 
 .palette--colors {
     list-style: none;
-}
-
-.palette--colors {
     display: flex;
 }
 
-.palette-1 {
+.palette-1,
+.palette-2,
+.palette-3 {
     display: flex;
 }
 
-.bp {
+.bp,
+.rp,
+.gp {
     width: 30px;
     height: 25px;
 }
@@ -64,9 +81,38 @@
     background-color: $color--hospital-green;
 }
 
+.p2--color1 {
+    background-color: #420101;
+}
+
+.p2--color2 {
+    background-color: #bd1010;
+}
+
+.p2--color3 {
+    background-color: #e95626;
+}
+
+.p3--color1 {
+    background-color: #3e5b65;
+}
+
+.p3--color2 {
+    background-color: #eab052;
+}
+
+.p3--color3 {
+    background-color: #a0c0cf;
+}
+
 .hidden {
-    height: 0;
+    height: 1;
     width: 0;
     display: inline-block;
     overflow: hidden;
+}
+
+.field__fill {
+    display: block;
+    width: 100%;
 }
