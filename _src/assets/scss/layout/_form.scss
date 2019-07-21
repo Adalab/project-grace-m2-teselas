@@ -1,0 +1,32 @@
+.main__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.preview__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $color--pale-grey;
+    padding-bottom: 40px;
+}
+
+.reset__button {
+    align-self: flex-start;
+    margin-left: 39%;
+}
+
+.card__box {
+    width: auto;
+    background-color: $color--white;
+}
+
+.li--card {
+    display: inline;
+    list-style: none;
+}
