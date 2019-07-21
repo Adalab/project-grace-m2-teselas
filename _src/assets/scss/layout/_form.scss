@@ -30,3 +30,30 @@
     display: inline;
     list-style: none;
 }
+
+.palette1,
+.palette2,
+.palette3 {
+    list-style: none;
+}
+
+.palette1 {
+    display: flex;
+}
+
+.pal-1 {
+    color-1,
+    color-2,
+    color-3 {
+        width: 30px;
+        height: 25px;
+        background-color: black;
+    }
+}
+
+.hidden {
+    height: 0;
+    width: 0;
+    display: inline-block;
+    overflow: hidden;
+}
