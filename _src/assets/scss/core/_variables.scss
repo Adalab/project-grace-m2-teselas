@@ -1,3 +1,4 @@
+// Colors
 $color--black: #000000;
 $color--dark-green-blue: #114e4e;
 $color--dirty-blue: #438792;
@@ -7,5 +8,18 @@ $color--pale-grey: #dde9ed;
 $color--silver: #bfcdd0;
 $color--black-20: rgba(0, 0, 0, 0.2);
 $color--dull-orange: #e17334;
+$color--text: #54585a;
+$color--placeholder: #c5c5c5;
+$color--white: #ffffff;
 
+// Font family
+$font-family--principal: 'open sans', sans-serif;
+$font-family--title: 'merriweather', serif;
+$font-family--card: 'montserrat', sans-serif;
+//falta enlazar las fuentes, el link con las tres está en trello
 
+// Font weight
+$weight--regular: 400;
+$weight--semi-bold: 600;
+$weight--bold: 700;
+$weight--black: 900;
