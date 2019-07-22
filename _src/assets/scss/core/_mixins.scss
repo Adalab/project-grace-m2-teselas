@@ -13,10 +13,11 @@
   color: $color;
 }
 
-@mixin txt128(){
+@mixin txt128($color){
   font-size: 12.8px;
   font-family: $font-family--principal;
   font-weight: $weight--regular;
+  color: $color;
   @media all and (min-width:768px){
     font-size: 16px;
   }
