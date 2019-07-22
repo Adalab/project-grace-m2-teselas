@@ -25,8 +25,8 @@
     background-color: $color--white;
 }
 
-.li--card {
-    display: inline;
+.rrss__list {
+    display: flex;
     list-style: none;
 }
 
@@ -51,58 +51,34 @@
     list-style: none;
 }
 
+.palette__option {
+    display: flex;
+    align-items: center;
+}
+
 .palette--colors {
     list-style: none;
     display: flex;
+    margin-left: 5px;
 }
 
-.palette-1,
-.palette-2,
-.palette-3 {
+.color__box {
+    width: 30px;
+    height: 1px;
+    padding-top: 24px;
+    overflow: hidden;
+}
+
+.photo__button-preview {
     display: flex;
 }
 
-.bp,
-.rp,
-.gp {
-    width: 30px;
-    height: 25px;
-}
-
-.p1--color1 {
-    background-color: $color--dark-green-blue;
-}
-
-.p1--color2 {
-    background-color: $color--dirty-blue;
-}
-
-.p1--color3 {
-    background-color: $color--hospital-green;
-}
-
-.p2--color1 {
-    background-color: #420101;
-}
-
-.p2--color2 {
-    background-color: #bd1010;
-}
-
-.p2--color3 {
-    background-color: #e95626;
-}
-
-.p3--color1 {
-    background-color: #3e5b65;
-}
-
-.p3--color2 {
-    background-color: #eab052;
-}
-
-.p3--color3 {
-    background-color: #a0c0cf;
+.photo__preview {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin-left: 5px;
+    border: 1px solid red;
 }
 
 .hidden {

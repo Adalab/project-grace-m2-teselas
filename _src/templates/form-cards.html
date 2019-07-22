@@ -59,35 +59,38 @@
                             <ul class="design__colors-list">
 
                                 <!-- PALETTE 1 -->
-                                <li class="palette-1">
-                                    <label class="hidden" for="blue--palette">blue palette</label>
-                                    <input class="radio__palette" type="radio" name="palette" value="1">
+                                <li class="palette">
+                                    <label for="p1" class="palette__option">
+                                    <input class="radio__palette" type="radio" name="palette" value="1" id="p1">
                                     <ul class="palette--colors">
-                                        <li class="bp p1--color1"></li>
-                                        <li class="bp p1--color2"></li>
-                                        <li class="bp p1--color3"></li>
+                                        <li class="color__box p1--color1" style="background-color: #114e4e">cyprus</li>
+                                        <li class="color__box p1--color2" style="background-color: #438792">hippie blue</li>
+                                        <li class="color__box p1--color3" style="background-color: #a2deaf">chinook</li>
                                     </ul>
+                                  </label>
                                 </li>
 
                                 <!-- PALETTE 2 -->
-                                <li class="palette-2">
-                                    <label class="hidden" for="red--palette">red palette</label>
-                                    <input class="radio__palette" type="radio" name="palette" value="2">
+                                <li class="palette">
+                                    <label for="p2" class="palette__option">
+                                    <input class="radio__palette" type="radio" name="palette" value="2" id="p2">
                                     <ul class="palette--colors">
-                                        <li class="rp p2--color1"></li>
-                                        <li class="rp p2--color2"></li>
-                                        <li class="rp p2--color3"></li>
+                                        <li class="color__box p2--color1" style="background-color: #420101">seal brown</li>
+                                        <li class="color__box" style="background-color: #bd1010">free speech red</li>
+                                        <li class="color__box" style="background-color: #e95626">cinnabar</li>
                                     </ul>
+                                  </label>
                                 </li>
                                 <!-- PALETTE 3 -->
-                                <li class="palette-3">
-                                    <label class="hidden" for="grey--palette">grey palette</label>
-                                    <input class="radio__palette" type="radio" name="palette" value="3">
+                                <li class="palette">
+                                    <label for="p3" class="palette__option">
+                                    <input class="radio__palette" type="radio" name="palette" value="3" id="p3">
                                     <ul class="palette--colors">
-                                        <li class="gp p3--color1"></li>
-                                        <li class="gp p3--color2"></li>
-                                        <li class="gp p3--color3"></li>
+                                        <li class="color__box p3--color1" style="background-color: #3e5b65">san juan</li>
+                                        <li class="color__box p3--color2" style="background-color: #eab052">casablanca</li>
+                                        <li class="color__box p3--color3" style="background-color: #a0c0cf">regent st blue</li>
                                     </ul>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
@@ -144,8 +147,7 @@
                 </fieldset>
 
                 <!-- SHARE -->
-                <fieldset class="share--card">
-                    <legend class="hidden">comparte</legend>
+                <div class="share--card">
                     <div class="share__box">
                         <div class="share__box--title">
                             <div class="share__icon"></div>
@@ -161,7 +163,7 @@
                         <a href="" class="link__card"></a>
                         <a href="" class="share__button-twitter"><i></i>compartir en twitter</a>
                     </div>
-                </fieldset>
+                </div>
 
             </form>
         </div>
