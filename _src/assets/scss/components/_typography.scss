@@ -1,23 +1,16 @@
-@mixin txt14(){
-  font-size: 14px;
-  font-family: $font-family--principal;
-  font-weight: $weight--regular;
-}
+// Font family
+$font-family--principal: 'open sans', sans-serif;
+$font-family--title: 'merriweather', serif;
+$font-family--card: 'montserrat', sans-serif;
+//falta enlazar las fuentes, el link con las tres está en trello
 
-@mixin txt18(){
-  font-size: 18px;
-  font-family: $font-family--principal;
-  font-weight: $weight--semi-bold;
-}
+// Font weight
+$weight--regular: 400;
+$weight--semi-bold: 600;
+$weight--bold: 700;
+$weight--black: 900;
 
-@mixin txt128(){
-  font-size: 12.8px;
-  font-family: $font-family--principal;
-  font-weight: $weight--regular;
-  @media all and (min-width:768px){
-    font-size: 16px;
-  }
-}
+
 
 /* Estilos para el título naranja de la landing-page {
   color: $color--dull-orange;

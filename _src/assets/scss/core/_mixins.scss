@@ -1,1 +1,23 @@
 // Typography
+@mixin txt14($color){
+  font-size: 14px;
+  font-family: $font-family--principal;
+  font-weight: $weight--regular;
+  color: $color;
+}
+
+@mixin txt18($color){
+  font-size: 18px;
+  font-family: $font-family--principal;
+  font-weight: $weight--semi-bold;
+  color: $color;
+}
+
+@mixin txt128(){
+  font-size: 12.8px;
+  font-family: $font-family--principal;
+  font-weight: $weight--regular;
+  @media all and (min-width:768px){
+    font-size: 16px;
+  }
+}

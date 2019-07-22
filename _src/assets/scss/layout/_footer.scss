@@ -1,10 +1,8 @@
 .footer-container{
   text-align: center;
   margin:auto;
-  font-family: $font-family--principal;
-  font-size: 20px;
-  color:#6b6b6b;
   line-height: 1.43;
+  @include txt14($color--footer);
   @media all and (min-width:768px){
     padding-top:10px;
     padding-bottom:10px;
