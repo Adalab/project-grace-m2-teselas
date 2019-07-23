@@ -16,51 +16,52 @@
 
     <!-- MAIN -->
     <main class="main__box">
-        <!-- CARD PREVIEW -->
-        <div class="preview__box">
-            <div class="button-card__box">
-                <button class="reset__button" type="reset">reset</button>
-                <div class="card__box">
-                    <div class="name-job__box">
-                        <p class="name__card">Pocahontas al poder</p>
-                        <p class="job__card">no sé muy bien cuál era su curro</p>
+        <div class="wrapper__box">
+            <!-- CARD PREVIEW -->
+            <div class="preview__box">
+                <div class="button-card__box">
+                    <button class="reset__button" type="reset">reset</button>
+                    <div class="card__box">
+                        <div class="name-job__box">
+                            <p class="name__card">Pocahontas al poder</p>
+                            <p class="job__card">no sé muy bien cuál era su curro</p>
+                        </div>
+                        <div class="image-card__box">
+                            <img src="https://place-hold.it/300x200" alt="image card preview">
+                        </div>
+                        <ul class="rrss__list">
+                            <li class="li--card item1">github</li>
+                            <li class="li--card item2">tinder</li>
+                            <li class="li--card item3">twitter</li>
+                            <li class="li--card item4">email</li>
+                        </ul>
                     </div>
-                    <div class="image-card__box">
-                        <img src="https://place-hold.it/300x200" alt="image card preview">
-                    </div>
-                    <ul class="rrss__list">
-                        <li class="li--card item1">github</li>
-                        <li class="li--card item2">tinder</li>
-                        <li class="li--card item3">twitter</li>
-                        <li class="li--card item4">email</li>
-                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- OPTIONS TO CREATE THE CARD -->
-        <div class="options__box">
-            <form class="create__card" action="" method="POST">
+            <!-- OPTIONS TO CREATE THE CARD -->
+            <div class="options__box">
+                <form class="create__card" action="" method="POST">
 
-                <!-- DESIGN -->
-                <fieldset class="design--card">
-                    <legend class="hidden">diseña</legend>
-                    <!-- DESIGN TITLE -->
-                    <div class="design__box--title">
-                        <div class="design__icon"></div>
-                        <h2 class="design__title">diseña</h2>
-                        <div class="down__icon"><i></i></div>
-                    </div>
-                    <!-- PALETTE LIST -->
-                    <div class="design__form">
-                        <p>colores</p>
-                        <div class="design__form--colors">
+                    <!-- DESIGN -->
+                    <fieldset class="design--card">
+                        <legend class="hidden">diseña</legend>
+                        <!-- DESIGN TITLE -->
+                        <div class="design__box--title">
+                            <div class="design__icon"></div>
+                            <h2 class="design__title">diseña</h2>
+                            <div class="down__icon"><i></i></div>
+                        </div>
+                        <!-- PALETTE LIST -->
+                        <div class="design__form">
+                            <p>colores</p>
+                            <div class="design__form--colors">
 
-                            <!-- ALL PALETTES LIST -->
-                            <ul class="design__colors-list">
+                                <!-- ALL PALETTES LIST -->
+                                <ul class="design__colors-list">
 
-                                <!-- PALETTE 1 -->
-                                <li class="palette">
-                                    <label for="p1" class="palette__option">
+                                    <!-- PALETTE 1 -->
+                                    <li class="palette">
+                                        <label for="p1" class="palette__option">
                                     <input class="radio__palette" type="radio" name="palette" value="1" id="p1">
                                     <ul class="palette--colors">
                                         <li class="color__box p1--color1" style="background-color: #114e4e">cyprus</li>
@@ -68,11 +69,11 @@
                                         <li class="color__box p1--color3" style="background-color: #a2deaf">chinook</li>
                                     </ul>
                                   </label>
-                                </li>
+                                    </li>
 
-                                <!-- PALETTE 2 -->
-                                <li class="palette">
-                                    <label for="p2" class="palette__option">
+                                    <!-- PALETTE 2 -->
+                                    <li class="palette">
+                                        <label for="p2" class="palette__option">
                                     <input class="radio__palette" type="radio" name="palette" value="2" id="p2">
                                     <ul class="palette--colors">
                                         <li class="color__box p2--color1" style="background-color: #420101">seal brown</li>
@@ -80,10 +81,10 @@
                                         <li class="color__box" style="background-color: #e95626">cinnabar</li>
                                     </ul>
                                   </label>
-                                </li>
-                                <!-- PALETTE 3 -->
-                                <li class="palette">
-                                    <label for="p3" class="palette__option">
+                                    </li>
+                                    <!-- PALETTE 3 -->
+                                    <li class="palette">
+                                        <label for="p3" class="palette__option">
                                     <input class="radio__palette" type="radio" name="palette" value="3" id="p3">
                                     <ul class="palette--colors">
                                         <li class="color__box p3--color1" style="background-color: #3e5b65">san juan</li>
@@ -91,81 +92,82 @@
                                         <li class="color__box p3--color3" style="background-color: #a0c0cf">regent st blue</li>
                                     </ul>
                                     </label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </fieldset>
-
-                <!-- FILL -->
-                <fieldset class="fill--card">
-                    <legend class="hidden">rellena</legend>
-                    <div class="fill__box--title">
-                        <div class="fill__icon"></div>
-                        <h2 class="fill__title">rellena</h2>
-                        <div class="down__icon"><i></i></div>
-                    </div>
-                    <div class="fill__form">
-                        <div class="fill__box--name">
-                            <label class="fill_name" for="name">nombre completo</label>
-                            <input class="field__fill" type="text" name="name" placeholder="Ej: Sally Jill" id="">
-                        </div>
-
-                        <div class="fill__box--job">
-                            <label class="fill_job" for="job">puesto</label>
-                            <input class="field__fill" type="text" name="job" placeholder="Ej: Front-end unicorn" id="">
-                        </div>
-
-                        <div class="fill__box--photo">
-                            <label class="fill_name" for="name">imagen de perfil</label>
-                            <input class="hidden" type="file" name="photo" id="photo" required="">
-                            <div class="photo__button-preview">
-                                <button class="photo__button" type="button">añadir imagen</button>
-                                <div class="photo__preview"></div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div class="fill__box--email">
-                            <label class="fill_email" for="email">email</label>
-                            <input class="field__fill" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" id="">
-                        </div>
-                        <div class="fill__box--phone">
-                            <label class="fill_phone" for="telephone">teléfono</label>
-                            <input class="field__fill" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" id="">
-                        </div>
-                        <div class="fill__box--email">
-                            <label class="fill_email" for="email">linkedin</label>
-                            <input class="field__fill" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="">
-                        </div>
-                        <div class="fill__box--email">
-                            <label class="fill_email" for="email">github</label>
-                            <input class="field__fill" type="text" name="github" placeholder="Ej: @sally-hill" id="">
-                        </div>
-                    </div>
+                    </fieldset>
 
-                </fieldset>
-
-                <!-- SHARE -->
-                <div class="share--card">
-                    <div class="share__box">
-                        <div class="share__box--title">
-                            <div class="share__icon"></div>
-                            <h2 class="share__title">comparte</h2>
+                    <!-- FILL -->
+                    <fieldset class="fill--card">
+                        <legend class="hidden">rellena</legend>
+                        <div class="fill__box--title">
+                            <div class="fill__icon"></div>
+                            <h2 class="fill__title">rellena</h2>
                             <div class="down__icon"><i></i></div>
                         </div>
-                        <div class="share__box--button">
-                            <button class="share__button" type="submit"><i></i>crear tarjeta</button>
+                        <div class="fill__form">
+                            <div class="fill__box--name">
+                                <label class="fill_name" for="name">nombre completo</label>
+                                <input class="field__fill" type="text" name="name" placeholder="Ej: Sally Jill" id="">
+                            </div>
+
+                            <div class="fill__box--job">
+                                <label class="fill_job" for="job">puesto</label>
+                                <input class="field__fill" type="text" name="job" placeholder="Ej: Front-end unicorn" id="">
+                            </div>
+
+                            <div class="fill__box--photo">
+                                <label class="fill_name" for="name">imagen de perfil</label>
+                                <input class="hidden" type="file" name="photo" id="photo" required="">
+                                <div class="photo__button-preview">
+                                    <button class="photo__button" type="button">añadir imagen</button>
+                                    <div class="photo__preview"></div>
+                                </div>
+                            </div>
+
+                            <div class="fill__box--email">
+                                <label class="fill_email" for="email">email</label>
+                                <input class="field__fill" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" id="">
+                            </div>
+                            <div class="fill__box--phone">
+                                <label class="fill_phone" for="telephone">teléfono</label>
+                                <input class="field__fill" type="tel" name="telephone" placeholder="Ej: 555-55-55-55" id="">
+                            </div>
+                            <div class="fill__box--email">
+                                <label class="fill_email" for="email">linkedin</label>
+                                <input class="field__fill" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="">
+                            </div>
+                            <div class="fill__box--email">
+                                <label class="fill_email" for="email">github</label>
+                                <input class="field__fill" type="text" name="github" placeholder="Ej: @sally-hill" id="">
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- SHARE -->
+                    <div class="share--card">
+                        <div class="share__box">
+                            <div class="share__box--title">
+                                <div class="share__icon"></div>
+                                <h2 class="share__title">comparte</h2>
+                                <div class="down__icon"><i></i></div>
+                            </div>
+                            <div class="share__box--button">
+                                <button class="share__button" type="submit"><i></i>crear tarjeta</button>
+                            </div>
+                        </div>
+                        <div class="card__created--info hidden">
+                            <p class="created--message">La tarjeta ha sido creada:</p>
+                            <a href="" class="link__card"></a>
+                            <a href="" class="share__button-twitter"><i></i>compartir en twitter</a>
                         </div>
                     </div>
-                    <div class="card__created--info hidden">
-                        <p class="created--message">La tarjeta ha sido creada:</p>
-                        <a href="" class="link__card"></a>
-                        <a href="" class="share__button-twitter"><i></i>compartir en twitter</a>
-                    </div>
-                </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     </main>
 
