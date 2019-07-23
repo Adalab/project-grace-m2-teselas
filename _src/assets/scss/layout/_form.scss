@@ -92,3 +92,24 @@
     display: block;
     width: 100%;
 }
+.icon__form {
+  fill: $color--dull-orange;
+  width: 32px;
+  height: 26px;
+}
+.header__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color--white;
+
+}
+.title__form {
+    width: 250px;
+    height: 1px;
+    padding-top: 62px;
+    overflow: hidden;
+    background-image: url('../images/tarjetas-molonas.png');
+    background-size: cover;
+    margin: 30px auto;
+}
