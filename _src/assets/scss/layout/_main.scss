@@ -103,10 +103,10 @@
     height: 42px;
     border-radius: 21px;
     background-color: $color--dark-green-blue;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    //position: absolute;
+    //bottom: 30px;
+    //left: 50%;
+    //transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,4 +123,8 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $color--white;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
