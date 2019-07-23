@@ -1,7 +1,10 @@
+
+
 .footer-container {
     text-align: center;
     margin: 0 auto;
     line-height: 1.43;
+    grid-row: 2/3;
     @include txt14($color--footer);
     @media all and (min-width: 768px) {
         padding-top: 10px;
