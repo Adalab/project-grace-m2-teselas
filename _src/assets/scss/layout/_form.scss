@@ -5,7 +5,10 @@
     align-items: center;
 }
 
-.wrapper__box {}
+.wrapper__box {
+    width: 100%;
+    @media all and (min-width: 768px) {}
+}
 
 .preview__box {
     display: flex;
