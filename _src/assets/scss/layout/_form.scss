@@ -1,220 +1,227 @@
-// CSS HEADER FORM
-.header__form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $color--white;
-}
+            // CSS HEADER FORM
+            .header__form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $color--white;
+            }
 
-.title__form {
-    width: 250px;
-    height: 1px;
-    padding-top: 62px;
-    overflow: hidden;
-    background-image: url('../images/tarjetas-molonas.png');
-    background-size: cover;
-    margin: 30px auto;
-}
+            .title__form {
+                width: 250px;
+                height: 1px;
+                padding-top: 62px;
+                overflow: hidden;
+                background-image: url('../images/tarjetas-molonas.png');
+                background-size: cover;
+                margin: 30px auto;
+            }
 
-// CSS FORM MAIN
-.main__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-}
+            // CSS FORM MAIN
+            .main__box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #f5f5f5;
+            }
 
-.wrapper__box {
-    width: 100%;
-    @media all and (min-width: 768px) {
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 20px 0;
-        & .preview__box {
-            grid-column: 2 / span 1;
-            grid-row: 1 / span 2;
-            border-radius: 6px;
-            place-self: center;
-            align-self: stretch;
-        }
-        & .options__box {
-            grid-column: 1 /span 1;
-            grid-row: 1 / span 2;
-        }
-    }
-}
+            .wrapper__box {
+                width: 100%;
+                @media all and (min-width: 768px) {
+                    display: grid;
+                    grid-template-columns: 400px 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    margin: 20px 0;
+                    & .preview__box {
+                        grid-column: 2 / span 1;
+                        grid-row: 1 / span 2;
+                        border-radius: 6px;
+                        place-self: center;
+                        align-self: stretch;
+                    }
+                    & .options__box {
+                        grid-column: 1 /span 1;
+                        grid-row: 1 / span 2;
+                    }
+                }
+            }
 
-.preview__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: $color--pale-grey;
-    padding-bottom: 40px;
-}
+            .preview__box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                background-color: $color--pale-grey;
+                padding-bottom: 40px;
+            }
 
-.reset__button {
-    align-self: flex-start;
-    margin-left: auto;
-    width: 75px;
-    height: 30px;
-    border-radius: 15px;
-    border: solid 1px #ffffff;
-    background-color: transparent;
-    color: $color--text;
-    font-size: 12px;
-    font-family: $font-family--principal;
-    font-weight: $weight--regular;
-    line-height: 20px;
-}
+            .reset__button {
+                align-self: flex-start;
+                margin-left: auto;
+                width: 75px;
+                height: 30px;
+                border-radius: 15px;
+                border: solid 1px #ffffff;
+                background-color: transparent;
+                color: $color--text;
+                font-size: 12px;
+                font-family: $font-family--principal;
+                font-weight: $weight--regular;
+                line-height: 20px;
+            }
 
-.icon__trush {
-    fill: $color--dull-orange;
-    width: 11px;
-    height: 20px;
-}
+            .icon__trush {
+                fill: $color--dull-orange;
+                width: 11px;
+                height: 20px;
+            }
 
-.card__box {
-    width: auto;
-    background-color: $color--white;
-}
+            .card__box {
+                width: auto;
+                background-color: $color--white;
+            }
 
-.name__card {
-    color: $color--dark-green-blue;
-    font-size: 18px;
-    font-family: $font-family--card;
-    font-weight: $weight--bold;
-    line-height: 20px;
-}
+            .name__card {
+                color: $color--dark-green-blue;
+                font-size: 18px;
+                font-family: $font-family--card;
+                font-weight: $weight--bold;
+                line-height: 20px;
+            }
 
-.job__Card {
-    color: $color--text;
-    font-size: 16px;
-    font-family: $font-family--card;
-    font-weight: $weight--regular;
-    line-height: 20px;
-}
+            .job__Card {
+                color: $color--text;
+                font-size: 16px;
+                font-family: $font-family--card;
+                font-weight: $weight--regular;
+                line-height: 20px;
+            }
 
-.rrss__list {
-    display: flex;
-    list-style: none;
-}
+            .rrss__list {
+                display: flex;
+                list-style: none;
+            }
 
-.options__box {
-    background-color: #f5f5f5;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0 20px;
-}
+            .options__box {
+                background-color: #f5f5f5;
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0 20px;
+            }
 
-.design--card,
-.fill--card,
-.share--card {
-    border: none;
-}
+            .design--card,
+            .fill--card,
+            .share--card {
+                border: none;
+            }
 
-.design__form {
-    display: flex;
-    justify-content: space-between;
-}
+            .design__form {
+                display: flex;
+                justify-content: space-between;
+            }
 
-.design__colors-list {
-    list-style: none;
-}
+            .design__colors-list {
+                list-style: none;
+            }
 
-.palette__option {
-    display: flex;
-    align-items: center;
-}
+            .palette__option {
+                display: flex;
+                align-items: center;
+            }
 
-.palette--colors {
-    list-style: none;
-    display: flex;
-    margin-left: 5px;
-}
+            .palette--colors {
+                list-style: none;
+                display: flex;
+                margin-left: 5px;
+            }
 
-.color__box {
-    width: 30px;
-    height: 1px;
-    padding-top: 24px;
-    overflow: hidden;
-}
+            .color__box {
+                width: 30px;
+                height: 1px;
+                padding-top: 24px;
+                overflow: hidden;
+            }
 
-.photo__button-preview {
-    display: flex;
-}
+            .photo__button-preview {
+                display: flex;
+            }
 
-.photo__preview {
-    width: 20px;
-    height: 20px;
-    background-color: yellow;
-    margin-left: 5px;
-    border: 1px solid red;
-}
+            .photo__preview {
+                width: 20px;
+                height: 20px;
+                background-color: yellow;
+                margin-left: 5px;
+                border: 1px solid red;
+            }
 
-.hidden {
-    height: 1;
-    width: 0;
-    display: inline-block;
-    overflow: hidden;
-}
+            .hidden {
+                height: 1;
+                width: 0;
+                display: inline-block;
+                overflow: hidden;
+            }
 
-.field__fill {
-    display: block;
-    width: 100%;
-}
+            .field__fill {
+                display: block;
+                width: 100%;
+            }
 
-.icon__form {
-    fill: $color--dull-orange;
-    width: 32px;
-    height: 26px;
-}
+            .icon__form {
+                fill: $color--dull-orange;
+                width: 32px;
+                height: 26px;
+            }
 
-.name__card {
-    font-family: $font-family--card;
-    color: $color--dark-green-blue;
-    font-weight: $weight--bold;
-    line-height: 1.1;
-    text-transform: capitalize;
-}
+            .name__card {
+                font-family: $font-family--card;
+                color: $color--dark-green-blue;
+                font-weight: $weight--bold;
+                line-height: 1.1;
+                text-transform: capitalize;
+            }
 
-.job__card {
-    font-size: 16px;
-    font-family: $font-family--card;
-    line-height: 1.25;
-    color: $color--text;
-}
+            .job__card {
+                font-size: 16px;
+                font-family: $font-family--card;
+                line-height: 1.25;
+                color: $color--text;
+            }
 
-.li--card {
-    width: 32px;
-    height: 32px;
-    color: $color--dark-green-blue;
-}
+            .li--card {
+                width: 32px;
+                height: 32px;
+                color: $color--dark-green-blue;
+            }
 
-.link__card {
-    color: $color--dull-orange;
-    font-size: 12px;
-    font-family: $font-family--principal;
-    font-weight: $weight--semi-bold;
-}
+            .link__card {
+                color: $color--dull-orange;
+                font-size: 12px;
+                font-family: $font-family--principal;
+                font-weight: $weight--semi-bold;
+            }
 
-.design__title,
-.fill__title,
-.share__title,
-.created--message {
-    font-family: $font-family--principal;
-    font-size: 18px;
-    font-weight: $weight--semi-bold;
-    color: $color--text;
-}
+            .design__title,
+            .fill__title,
+            .share__title,
+            .created--message {
+                font-family: $font-family--principal;
+                font-size: 18px;
+                font-weight: $weight--semi-bold;
+                color: $color--text;
+            }
 
-.fill__form {
-    color: $color--dark-green-blue;
-    font-size: 14px;
-    font-family: $font-family--principal;
-    font-weight: $weight--regular;
-    text-transform: capitalize;
-}
+            .fill__form {
+                color: $color--dark-green-blue;
+                font-size: 14px;
+                font-family: $font-family--principal;
+                font-weight: $weight--regular;
+            }
+
+            .options__box,
+            .fill__form,
+            .share__box {
+                 ::first-letter {
+                    text-transform: capitalize;
+                }
+            }
