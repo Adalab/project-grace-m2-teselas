@@ -10,6 +10,10 @@
   overflow: hidden;
   background-image: url('../images/tarjetas-molonas.png');
   background-size: cover;
-  margin-top: 95px;
+  //margin-top: 95px;
+  @media all and (min-width: 768px) {
+   width: 419px;
+   padding-top: 105px;
+}
 }
 

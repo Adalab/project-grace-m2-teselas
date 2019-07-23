@@ -19,8 +19,11 @@
     //@media all and (min-width: 768px) {
         //min-height: 400px;
     //}
-    padding-top: 35.4px;
+    margin-top: 35.4px;
     text-align: center;
+    @media all and (min-width: 768px) {
+      margin-top: 31px;
+  }
 }
 
 //Sin botón
@@ -47,16 +50,20 @@
     @include txt128($color--dark-green-blue);
     //text-align: center;
     //margin: 0 28px 17.8px;
-    margin-left: 0px;
     margin-bottom: 17.8px;
     @media all and (min-width: 768px) {
-      font-size: 24px;
+      margin-bottom: 27px;
+      width: 331px;
   }
 }
 
 .box {
     width: 268px;
     height: 73.8px;
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+  }
 }
 
 .box__list {
@@ -64,6 +71,7 @@
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    padding: 15px 20px 10px 20px;
     border: solid 1.6px rgba(225, 115, 52, 0.21);
     border-radius: 4px;
 }
