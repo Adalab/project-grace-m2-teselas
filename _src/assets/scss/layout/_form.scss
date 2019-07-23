@@ -1,0 +1,94 @@
+.main__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $color--pale-grey;
+    padding-bottom: 40px;
+}
+
+.reset__button {
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.card__box {
+    width: auto;
+    background-color: $color--white;
+}
+
+.rrss__list {
+    display: flex;
+    list-style: none;
+}
+
+.options__box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.design--card,
+.fill--card,
+.share--card {
+    border: none;
+}
+
+.design__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.design__colors-list {
+    list-style: none;
+}
+
+.palette__option {
+    display: flex;
+    align-items: center;
+}
+
+.palette--colors {
+    list-style: none;
+    display: flex;
+    margin-left: 5px;
+}
+
+.color__box {
+    width: 30px;
+    height: 1px;
+    padding-top: 24px;
+    overflow: hidden;
+}
+
+.photo__button-preview {
+    display: flex;
+}
+
+.photo__preview {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    margin-left: 5px;
+    border: 1px solid red;
+}
+
+.hidden {
+    height: 1;
+    width: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.field__fill {
+    display: block;
+    width: 100%;
+}
