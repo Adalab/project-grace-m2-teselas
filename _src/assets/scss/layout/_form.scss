@@ -1,3 +1,22 @@
+// CSS HEADER FORM
+.header__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color--white;
+
+}
+.title__form {
+    width: 250px;
+    height: 1px;
+    padding-top: 62px;
+    overflow: hidden;
+    background-image: url('../images/tarjetas-molonas.png');
+    background-size: cover;
+    margin: 30px auto;
+}
+
+// CSS FORM MAIN
 .main__box {
     display: flex;
     flex-direction: column;
@@ -36,10 +55,19 @@
     background-color: $color--pale-grey;
     padding-bottom: 40px;
 }
-
 .reset__button {
     align-self: flex-start;
     margin-left: auto;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px #ffffff;
+   background-color: transparent;
+}
+.icon__trush {
+  fill: $color--dull-orange;
+  width: 11px;
+  height: 20px;
 }
 
 .card__box {
@@ -114,4 +142,28 @@
 .field__fill {
     display: block;
     width: 100%;
+}
+.icon__form {
+  fill: $color--dull-orange;
+  width: 32px;
+  height: 26px;
+}
+
+.name__card {
+  font-family: $font-family--card;
+  color: $color--dark-green-blue;
+  font-weight: $weight--bold;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+.job__card {
+  font-size: 16px;
+  font-family: $font-family--card;
+  line-height: 1.25;
+  color: $color--text;
+}
+.li--card {
+  width: 32px;
+  height: 32px;
+  color: $color--dark-green-blue;
 }
