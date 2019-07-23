@@ -1,11 +1,11 @@
 // CSS HEADER FORM
 .header__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $color--white;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color--white;
 }
+
 .title__form {
     width: 250px;
     height: 1px;
@@ -55,6 +55,7 @@
     background-color: $color--pale-grey;
     padding-bottom: 40px;
 }
+
 .reset__button {
     align-self: flex-start;
     margin-left: auto;
@@ -62,17 +63,39 @@
     height: 30px;
     border-radius: 15px;
     border: solid 1px #ffffff;
-   background-color: transparent;
+    background-color: transparent;
+    color: $color--text;
+    font-size: 12px;
+    font-family: $font-family--principal;
+    font-weight: $weight--regular;
+    line-height: 20px;
 }
+
 .icon__trush {
-  fill: $color--dull-orange;
-  width: 11px;
-  height: 20px;
+    fill: $color--dull-orange;
+    width: 11px;
+    height: 20px;
 }
 
 .card__box {
     width: auto;
     background-color: $color--white;
+}
+
+.name__card {
+    color: $color--dark-green-blue;
+    font-size: 18px;
+    font-family: $font-family--card;
+    font-weight: $weight--bold;
+    line-height: 20px;
+}
+
+.job__Card {
+    color: $color--text;
+    font-size: 16px;
+    font-family: $font-family--card;
+    font-weight: $weight--regular;
+    line-height: 20px;
 }
 
 .rrss__list {
@@ -143,27 +166,47 @@
     display: block;
     width: 100%;
 }
+
 .icon__form {
-  fill: $color--dull-orange;
-  width: 32px;
-  height: 26px;
+    fill: $color--dull-orange;
+    width: 32px;
+    height: 26px;
 }
 
 .name__card {
-  font-family: $font-family--card;
-  color: $color--dark-green-blue;
-  font-weight: $weight--bold;
-  line-height: 1.1;
-  text-transform: capitalize;
+    font-family: $font-family--card;
+    color: $color--dark-green-blue;
+    font-weight: $weight--bold;
+    line-height: 1.1;
+    text-transform: capitalize;
 }
+
 .job__card {
-  font-size: 16px;
-  font-family: $font-family--card;
-  line-height: 1.25;
-  color: $color--text;
+    font-size: 16px;
+    font-family: $font-family--card;
+    line-height: 1.25;
+    color: $color--text;
 }
+
 .li--card {
-  width: 32px;
-  height: 32px;
-  color: $color--dark-green-blue;
+    width: 32px;
+    height: 32px;
+    color: $color--dark-green-blue;
+}
+
+.link__card {
+    color: $color--dull-orange;
+    font-size: 12px;
+    font-family: $font-family--principal;
+    font-weight: $weight--semi-bold;
+}
+
+.design__title,
+.fill__title,
+.share__title,
+.created--message {
+    font-family: $font-family--principal;
+    font-size: 18px;
+    font-weight: $weight--semi-bold;
+    color: $color--text;
 }
