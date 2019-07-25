@@ -18,6 +18,9 @@
 }
 .photo__button {
   @include txt14($color--white);
+  background-color: $color--dull-orange;
+  border-style: none;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
 .photo__button-preview {
   margin: 10px 0 20px;
