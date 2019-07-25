@@ -1,3 +1,26 @@
+.share__title {
+  position: relative;
+  padding-left: 31px;
+}
+.share__title::before {
+  content: "\f11c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  color: $color--dull-orange;
+  position: absolute;
+  left: 0;
+}
+.share__title::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  color: $color--text;
+  position: absolute;
+  right: 0;
+}
+.share--card {
+  padding-top: 20px;
+}
 .icon__form {
   fill: $color--dull-orange;
   width: 32px;
