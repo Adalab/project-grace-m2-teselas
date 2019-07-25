@@ -10,3 +10,6 @@
 ::placeholder {
   color: $color--placeholder;
 }
+.photo__button {
+  @include txt14($color--white);
+}

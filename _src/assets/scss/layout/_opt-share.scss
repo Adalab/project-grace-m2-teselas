@@ -1,8 +1,17 @@
-
 .icon__form {
   fill: $color--dull-orange;
   width: 32px;
   height: 26px;
+}
+.create__button {
+  @include txt18($color--white);
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  border-radius: 12px;
+  background: $color--dull-orange;
+  border: none;
+  margin: 30px 60px;
 }
 
 .link__card {
