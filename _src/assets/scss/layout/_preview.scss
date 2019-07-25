@@ -5,7 +5,7 @@
               justify-content: center;
               align-items: center;
               width: 100%;
-              background-color: $color--pale-grey;
+              background:linear-gradient(to bottom, $color--silver,$color--pale-grey);
               padding-bottom: 40px;
           }
 
@@ -15,17 +15,12 @@
               justify-content: center;
               align-items: center;
               margin: 38px 0 20px;
-              //margin-left: auto;
               width: 75px;
               height: 30px;
               border-radius: 15px;
               border: solid 1px #ffffff;
               background-color: transparent;
-              //color: $color--text;
-              //font-size: 12px;
-              //font-family: $font-family--principal;
-              //font-weight: $weight--regular;
-              //line-height: 20px;
+
           }
           .reset__button-title{
             color: $color--text;
@@ -47,7 +42,8 @@
               background-color: $color--white;
               padding-top: 21px;
               border-radius: 2px;
-              box-shadow: 0 1px 10px 0 var(black), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+              box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+
           }
 
           .name-job__box{
@@ -61,7 +57,8 @@
               font-family: $font-family--card;
               font-weight: $weight--bold;
               line-height: 20px;
-              margin-left: 15px;
+              margin: 0px 0px 4px 15px;
+
           }
 
           .job__card {
@@ -72,6 +69,7 @@
               line-height: 20px;
               margin-left: 15px;
           }
+
 
           .rrss__list {
               display: flex;
@@ -92,6 +90,10 @@
             font-family: $font-family--card;
             line-height: 1.25;
             color: $color--text;
+          }
+          .image-card{
+            width: 240px;
+            height: auto;
           }
 
           .link__icon__card{
