@@ -1,31 +1,37 @@
 .options__box {
-  background-color: #f5f5f5;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 20px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .design--card,
 .fill--card,
 .share--card {
-  border: none;
+    border: none;
 }
 
 .design__title,
 .fill__title,
 .share__title,
 .created--message {
-  @include txt18($color--text);
+    @include txt18($color--text);
 }
-
 
 .options__box,
 .fill__form,
 .share__box {
-   ::first-letter {
-      text-transform: capitalize;
-  }
+     ::first-letter {
+        text-transform: capitalize;
+    }
 }
-.design__box--title, .fill__box--title, .share__box--title {
-  text-transform: uppercase;
+
+.design__box--title,
+.fill__box--title,
+.share__box--title {
+    text-transform: uppercase;
+}
+
+.drop-down {
+    display: none;
 }
