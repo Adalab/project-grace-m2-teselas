@@ -13,12 +13,18 @@
   border: none;
   }
 
+
 .link__card {
 color: $color--dull-orange;
 font-size: 12px;
 font-family: $font-family--principal;
 font-weight: $weight--semi-bold;
+text-decoration: none;
+margin-top: 5px;
+margin-bottom: 10px;
 }
+
+
 
 .create__button-container, .card__created--info {
   border-bottom: 1px solid $color--footer--border;
@@ -28,9 +34,33 @@ font-weight: $weight--semi-bold;
   text-align:center;
   justify-content: center;
 
-
 }
 
 .card__created--info {
   flex-direction: column;
+}
+
+.share__button-twitter {
+  width: 181px;
+  background-color: $color--twitter;
+  height: 30px;
+  border-radius: 3px;
+  text-decoration: none;
+  @include txt14($color--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+
+}
+
+.share__button-twitter {
+  ::first-letter {
+     text-transform: capitalize;
+ }
+}
+
+.twitter__icon {
+  width: 18px;
+  height: 18px;
 }
