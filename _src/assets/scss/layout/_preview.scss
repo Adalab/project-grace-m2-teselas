@@ -78,3 +78,44 @@
               list-style: none;
               padding:10px 0px 12px 20px;
           }
+
+          .name__card {
+            font-family: $font-family--card;
+            color: $color--dark-green-blue;
+            font-weight: $weight--bold;
+            line-height: 1.1;
+            text-transform: capitalize;
+          }
+
+          .job__card {
+            font-size: 16px;
+            font-family: $font-family--card;
+            line-height: 1.25;
+            color: $color--text;
+          }
+
+          .link__icon__card{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: solid 2px $color--hospital-green;
+            color: $color--dark-green-blue;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+          }
+
+          .phone-icon{
+          height: 18px;
+          }
+          .card-icon{
+          height: 18px;
+          }
+          .linkedin-icon{
+          height: 18px;
+          }
+          .github-icon{
+          height: 18px;
+          }
+

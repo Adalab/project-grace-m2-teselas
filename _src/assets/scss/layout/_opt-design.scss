@@ -1,0 +1,44 @@
+.design__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design__colors-list {
+  list-style: none;
+}
+
+.palette__option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.palette--colors {
+  list-style: none;
+  display: flex;
+  margin-left: 5px;
+}
+
+.color__box {
+  width: 30px;
+  height: 1px;
+  padding-top: 24px;
+  overflow: hidden;
+}
+
+.photo__button-preview {
+  display: flex;
+}
+.photo__button{
+width: 140px;
+height: 30px;
+border-radius: 3px;
+}
+
+.photo__preview {
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  margin-left: 5px;
+  border: 1px solid red;
+}
