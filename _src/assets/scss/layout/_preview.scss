@@ -62,7 +62,8 @@
               font-family: $font-family--card;
               font-weight: $weight--bold;
               line-height: 20px;
-              margin-left: 15px;
+              margin: 0px 0px 4px 15px;
+
           }
 
           .job__card {
@@ -73,6 +74,7 @@
               line-height: 20px;
               margin-left: 15px;
           }
+
 
           .rrss__list {
               display: flex;
@@ -93,6 +95,10 @@
             font-family: $font-family--card;
             line-height: 1.25;
             color: $color--text;
+          }
+          .image-card{
+            width: 240px;
+            height: auto;
           }
 
           .link__icon__card{
