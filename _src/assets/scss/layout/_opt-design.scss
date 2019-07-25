@@ -34,14 +34,13 @@ width: 140px;
 height: 30px;
 border-radius: 3px;
 }
-
-.photo__preview {
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-  margin-left: 5px;
-  border: 1px solid red;
-}
+// .photo__preview {
+//   width: 20px;
+//   height: 20px;
+//   background-color: yellow;
+//   margin-left: 5px;
+//   border: 1px solid red;
+// }
 .colors__title {
   @include txt14 ($color--text);
   text-transform: uppercase;

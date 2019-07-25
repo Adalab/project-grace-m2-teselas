@@ -5,7 +5,10 @@
   height: 30px;
   margin: 7px 0 20px;
 }
-
+.fill--card {
+  border-bottom: 1px solid $color--footer--border;
+  padding-bottom: 30px;
+}
 .fill__form {
   @include txt14($color--dark-green-blue);
   margin-top: 25px;
@@ -18,4 +21,12 @@
 }
 .photo__button-preview {
   margin: 10px 0 20px;
+}
+
+.photo__preview {
+  width: 30px;
+  height: 30px;
+  background-color:transparent;
+  margin-left: 20px;
+  border: 1px solid $color--hospital-green;
 }
