@@ -112,6 +112,7 @@
             .rrss__list {
                 display: flex;
                 list-style: none;
+                padding:10px 0px 12px 20px;
             }
 
             .options__box {
@@ -199,7 +200,7 @@
                 color: $color--text;
             }
 
-            .link__card {
+            .link__icon__card{
                 width: 32px;
                 height: 32px;
                 border-radius: 50%;
@@ -208,6 +209,7 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                margin-right: 10px;
             }
 
             .phone-icon{
@@ -225,11 +227,11 @@
 
 
             .link__card {
-                color: $color--dull-orange;
-                font-size: 12px;
-                font-family: $font-family--principal;
-                font-weight: $weight--semi-bold;
-            }
+              color: $color--dull-orange;
+              font-size: 12px;
+              font-family: $font-family--principal;
+              font-weight: $weight--semi-bold;
+          }
 
             .design__title,
             .fill__title,
