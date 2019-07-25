@@ -23,10 +23,7 @@
 .fill__title,
 .share__title,
 .created--message {
-  font-family: $font-family--principal;
-  font-size: 18px;
-  font-weight: $weight--semi-bold;
-  color: $color--text;
+  @include txt18($color--text);
 }
 
 

@@ -1,11 +1,12 @@
 .field__fill {
   display: block;
   width: 100%;
+  border: $color--hospital-green 1px solid;
 }
 
 .fill__form {
-  color: $color--dark-green-blue;
-  font-size: 14px;
-  font-family: $font-family--principal;
-  font-weight: $weight--regular;
+  @include txt14($color--dark-green-blue);
+}
+::placeholder {
+  color: $color--placeholder;
 }

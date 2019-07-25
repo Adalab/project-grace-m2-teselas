@@ -42,3 +42,8 @@ border-radius: 3px;
   margin-left: 5px;
   border: 1px solid red;
 }
+.colors__title {
+  @include txt14 ($color--text);
+  text-transform: uppercase;
+  padding-top: 22px;
+}
