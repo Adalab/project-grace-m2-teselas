@@ -2,14 +2,20 @@
   display: block;
   width: 100%;
   border: $color--hospital-green 1px solid;
+  height: 30px;
+  margin: 7px 0 20px;
 }
 
 .fill__form {
   @include txt14($color--dark-green-blue);
+  margin-top: 25px;
 }
 ::placeholder {
   color: $color--placeholder;
 }
 .photo__button {
   @include txt14($color--white);
+}
+.photo__button-preview {
+  margin: 10px 0 20px;
 }
