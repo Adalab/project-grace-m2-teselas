@@ -84,8 +84,7 @@
             }
 
             .fa-trash-alt {
-                color:$color--text;
-                font-size: 12px;
+                width: 11px;
                 margin-right:8px;
             }
 
@@ -200,11 +199,30 @@
                 color: $color--text;
             }
 
-            .li--card {
+            .link__card {
                 width: 32px;
                 height: 32px;
+                border-radius: 50%;
+                border: solid 2px $color--hospital-green;
                 color: $color--dark-green-blue;
+                display:flex;
+                justify-content: center;
+                align-items: center;
             }
+
+            .phone-icon{
+              height: 18px;
+            }
+            .card-icon{
+              height: 18px;
+            }
+            .linkedin-icon{
+              height: 18px;
+            }
+            .github-icon{
+              height: 18px;
+            }
+
 
             .link__card {
                 color: $color--dull-orange;
