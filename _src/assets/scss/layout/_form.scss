@@ -128,6 +128,7 @@
             .palette__option {
                 display: flex;
                 align-items: center;
+                margin-bottom: 20px;
             }
 
             .palette--colors {
@@ -224,4 +225,7 @@
                  ::first-letter {
                     text-transform: capitalize;
                 }
+            }
+            .design__box--title, .fill__box--title, .share__box--title {
+                text-transform: uppercase;
             }
