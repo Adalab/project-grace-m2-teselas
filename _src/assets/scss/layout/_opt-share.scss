@@ -11,7 +11,7 @@
   border-radius: 12px;
   background: $color--dull-orange;
   border: none;
-  margin: 30px 60px;
+  margin: 30px 60px 0px 60px;
 }
 
 .link__card {
@@ -19,4 +19,11 @@ color: $color--dull-orange;
 font-size: 12px;
 font-family: $font-family--principal;
 font-weight: $weight--semi-bold;
+}
+
+.create__button-container, .card__created--info {
+  border-bottom: 1px solid $color--footer--border;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
 }
