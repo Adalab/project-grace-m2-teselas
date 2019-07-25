@@ -1,123 +1,130 @@
+.preview__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom, $color--silver, $color--pale-grey);
+    padding-bottom: 40px;
+}
 
-            .preview__box {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              background:linear-gradient(to bottom, $color--silver,$color--pale-grey);
-              padding-bottom: 40px;
-          }
+.button-card__box {
+    @media all and (min-width: 768px) {
+        margin-top: 173px;
+    }
+}
 
-          .reset__button {
-              align-self: flex-start;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin: 38px 0 20px;
-              width: 75px;
-              height: 30px;
-              border-radius: 15px;
-              border: solid 1px #ffffff;
-              background-color: transparent;
+.reset__button {
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 38px 0 20px;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    @media all and (min-width: 768px) {
+        margin-top: 0;
+    }
+}
 
-          }
-          .reset__button-title{
-            color: $color--text;
-            font-size: 12px;
-            font-family: $font-family--principal;
-            font-weight: $weight--regular;
-            line-height: 20px;
-            text-transform: uppercase;
+.reset__button-title {
+    color: $color--text;
+    font-size: 12px;
+    font-family: $font-family--principal;
+    font-weight: $weight--regular;
+    line-height: 20px;
+    text-transform: uppercase;
+}
 
-          }
+.fa-trash-alt {
+    width: 11px;
+    margin-right: 8px;
+}
 
-          .fa-trash-alt {
-              width: 11px;
-              margin-right:8px;
-          }
+.card__box {
+    width: auto;
+    background-color: $color--white;
+    padding-top: 21px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+}
 
-          .card__box {
-              width: auto;
-              background-color: $color--white;
-              padding-top: 21px;
-              border-radius: 2px;
-              box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+.name-job__box {
+    border-left: solid 5px $color--dirty-blue;
+    margin: 0px 0 10px;
+}
 
-          }
+.name__card {
+    color: $color--dark-green-blue;
+    font-size: 18px;
+    font-family: $font-family--card;
+    font-weight: $weight--bold;
+    line-height: 20px;
+    margin: 0px 0px 4px 15px;
+}
 
-          .name-job__box{
-            border-left: solid 5px $color--dirty-blue;
-            margin:0px 0 10px;
-          }
+.job__card {
+    color: $color--text;
+    font-size: 16px;
+    font-family: $font-family--card;
+    font-weight: $weight--regular;
+    line-height: 20px;
+    margin-left: 15px;
+}
 
-          .name__card {
-              color: $color--dark-green-blue;
-              font-size: 18px;
-              font-family: $font-family--card;
-              font-weight: $weight--bold;
-              line-height: 20px;
-              margin: 0px 0px 4px 15px;
+.rrss__list {
+    display: flex;
+    list-style: none;
+    padding: 10px 0px 12px 20px;
+}
 
-          }
+.name__card {
+    font-family: $font-family--card;
+    color: $color--dark-green-blue;
+    font-weight: $weight--bold;
+    line-height: 1.1;
+    text-transform: capitalize;
+}
 
-          .job__card {
-              color: $color--text;
-              font-size: 16px;
-              font-family: $font-family--card;
-              font-weight: $weight--regular;
-              line-height: 20px;
-              margin-left: 15px;
-          }
+.job__card {
+    font-size: 16px;
+    font-family: $font-family--card;
+    line-height: 1.25;
+    color: $color--text;
+}
 
+.image-card {
+    width: 240px;
+    height: auto;
+}
 
-          .rrss__list {
-              display: flex;
-              list-style: none;
-              padding:10px 0px 12px 20px;
-          }
+.link__icon__card {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 2px $color--hospital-green;
+    color: $color--dark-green-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
 
-          .name__card {
-            font-family: $font-family--card;
-            color: $color--dark-green-blue;
-            font-weight: $weight--bold;
-            line-height: 1.1;
-            text-transform: capitalize;
-          }
+.phone-icon {
+    height: 18px;
+}
 
-          .job__card {
-            font-size: 16px;
-            font-family: $font-family--card;
-            line-height: 1.25;
-            color: $color--text;
-          }
-          .image-card{
-            width: 240px;
-            height: auto;
-          }
+.card-icon {
+    height: 18px;
+}
 
-          .link__icon__card{
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            border: solid 2px $color--hospital-green;
-            color: $color--dark-green-blue;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10px;
-          }
+.linkedin-icon {
+    height: 18px;
+}
 
-          .phone-icon{
-          height: 18px;
-          }
-          .card-icon{
-          height: 18px;
-          }
-          .linkedin-icon{
-          height: 18px;
-          }
-          .github-icon{
-          height: 18px;
-          }
-
+.github-icon {
+    height: 18px;
+}
