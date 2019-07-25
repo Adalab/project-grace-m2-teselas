@@ -1,0 +1,80 @@
+
+            .preview__box {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              background-color: $color--pale-grey;
+              padding-bottom: 40px;
+          }
+
+          .reset__button {
+              align-self: flex-start;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 38px 0 20px;
+              //margin-left: auto;
+              width: 75px;
+              height: 30px;
+              border-radius: 15px;
+              border: solid 1px #ffffff;
+              background-color: transparent;
+              //color: $color--text;
+              //font-size: 12px;
+              //font-family: $font-family--principal;
+              //font-weight: $weight--regular;
+              //line-height: 20px;
+          }
+          .reset__button-title{
+            color: $color--text;
+            font-size: 12px;
+            font-family: $font-family--principal;
+            font-weight: $weight--regular;
+            line-height: 20px;
+            text-transform: uppercase;
+
+          }
+
+          .fa-trash-alt {
+              width: 11px;
+              margin-right:8px;
+          }
+
+          .card__box {
+              width: auto;
+              background-color: $color--white;
+              padding-top: 21px;
+              border-radius: 2px;
+              box-shadow: 0 1px 10px 0 var(black), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+          }
+
+          .name-job__box{
+            border-left: solid 5px $color--dirty-blue;
+            margin:0px 0 10px;
+          }
+
+          .name__card {
+              color: $color--dark-green-blue;
+              font-size: 18px;
+              font-family: $font-family--card;
+              font-weight: $weight--bold;
+              line-height: 20px;
+              margin-left: 15px;
+          }
+
+          .job__card {
+              color: $color--text;
+              font-size: 16px;
+              font-family: $font-family--card;
+              font-weight: $weight--regular;
+              line-height: 20px;
+              margin-left: 15px;
+          }
+
+          .rrss__list {
+              display: flex;
+              list-style: none;
+              padding:10px 0px 12px 20px;
+          }
