@@ -31,7 +31,8 @@
                     display: grid;
                     grid-template-columns: 400px 1fr;
                     grid-template-rows: 1fr 1fr;
-                    margin: 20px 0;
+                    margin: 20px 40px;
+
                     & .preview__box {
                         grid-column: 2 / span 1;
                         grid-row: 1 / span 2;
