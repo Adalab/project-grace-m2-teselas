@@ -61,6 +61,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin: 38px 0 20px;
                 //margin-left: auto;
                 width: 75px;
                 height: 30px;
@@ -91,6 +92,14 @@
             .card__box {
                 width: auto;
                 background-color: $color--white;
+                padding-top: 21px;
+                border-radius: 2px;
+                box-shadow: 0 1px 10px 0 var(black), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+            }
+
+            .name-job__box{
+              border-left: solid 5px $color--dirty-blue;
+              margin:0px 0 10px;
             }
 
             .name__card {
@@ -99,14 +108,16 @@
                 font-family: $font-family--card;
                 font-weight: $weight--bold;
                 line-height: 20px;
+                margin-left: 15px;
             }
 
-            .job__Card {
+            .job__card {
                 color: $color--text;
                 font-size: 16px;
                 font-family: $font-family--card;
                 font-weight: $weight--regular;
                 line-height: 20px;
+                margin-left: 15px;
             }
 
             .rrss__list {
