@@ -1,3 +1,28 @@
+.design--card {
+  border-bottom: 1px solid $color--footer--border;
+  padding-bottom: 30px;
+}
+.design__title {
+  position: relative;
+  padding-left: 31px;
+}
+.design__title::before {
+  content: "\f248";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  color: $color--dull-orange;
+  position: absolute;
+  left: 0;
+}
+.design__title::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  color: $color--text;
+  position: absolute;
+  right: 0;
+}
+
 .design__form {
   display: flex;
   justify-content: space-between;
