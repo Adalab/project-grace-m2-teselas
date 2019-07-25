@@ -34,8 +34,16 @@
   border-radius: 12px;
   background: $color--dull-orange;
   border: none;
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}
+.create__button--icon {
+  width: 25px;
+  height: 22px;
+  margin-right: 9px;
+}
 
 .link__card {
 color: $color--dull-orange;
