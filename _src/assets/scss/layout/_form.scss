@@ -53,4 +53,10 @@
                 }
             }
 
+            .hidden {
+              height: 1;
+              width: 0;
+              display: inline-block;
+              overflow: hidden;
+            }
 
