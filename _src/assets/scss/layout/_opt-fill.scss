@@ -8,6 +8,8 @@
 .fill__title {
   position: relative;
   padding-left: 31px;
+  margin-top:9px;
+  margin-bottom: 7px;
 }
 .fill__title::before {
   content: "\f11c";
@@ -27,7 +29,6 @@
 }
 .fill--card {
   border-bottom: 1px solid $color--footer--border;
-  padding-bottom: 30px;
 }
 .fill__form {
   @include txt14($color--dark-green-blue);
