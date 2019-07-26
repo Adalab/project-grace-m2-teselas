@@ -15,6 +15,8 @@ function ShowOrHide(event) {
     } else if (event.currentTarget.classList.contains('fill__title')) {
         document.querySelector('.fill__form').classList.toggle('drop-down');
 
+        console.log(document.querySelector('.fill__form'));
+
     } else if (event.currentTarget.classList.contains('share__title')) {
         document.querySelector('.share__form').classList.toggle('drop-down');
     }
