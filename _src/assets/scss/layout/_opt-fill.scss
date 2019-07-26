@@ -5,6 +5,26 @@
   height: 30px;
   margin: 7px 0 20px;
 }
+.fill__title {
+  position: relative;
+  padding-left: 31px;
+}
+.fill__title::before {
+  content: "\f11c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  color: $color--dull-orange;
+  position: absolute;
+  left: 0;
+}
+.fill__title::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  color: $color--text;
+  position: absolute;
+  right: 0;
+}
 .fill--card {
   border-bottom: 1px solid $color--footer--border;
   padding-bottom: 30px;
