@@ -13,10 +13,15 @@
 
 .design__title,
 .fill__title,
-.share__title,
-.created--message {
+.share__title {
     @include txt18($color--text);
+    text-transform: uppercase;
 }
+
+.created--message {
+  @include txt18($color--text);
+}
+
 
 .options__box,
 .fill__form,
@@ -24,12 +29,6 @@
      ::first-letter {
         text-transform: capitalize;
     }
-}
-
-.design__box--title,
-.fill__box--title,
-.share__box--title {
-    text-transform: uppercase;
 }
 
 .drop-down {
