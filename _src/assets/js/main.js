@@ -39,6 +39,7 @@ radio1.addEventListener('click',changeColor);
 radio2.addEventListener('click',changeColor);
 radio3.addEventListener('click',changeColor);
 
+//Drop-down
 const titleForm = document.querySelectorAll('.js__title--form');
 
 function ShowOrHide(event) {
