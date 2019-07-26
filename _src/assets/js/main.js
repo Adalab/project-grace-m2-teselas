@@ -66,14 +66,23 @@ for (const buttonForm of titleForm) {
 // Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
 //seleccionar y declarar constantes
 const iconCard = document.querySelectorAll('.field__fill-icon');
+const iconPhone = document.querySelector('.li--card, .item1');
+const iconMail = document.querySelector('.li--card, .item2');
+const iconLinkedin = document.querySelector('.li--card, .item3');
+const iconGithub = document.querySelector('.li--card, .item4');
 
 //handler
 function showIcon(event){
   console.log(event.currentTarget.value);
-  const value = event.currentTarget.value;
-  if (value !== null){
-
-  }
+  const currentField = event.currentTarget;
+  if (currentField.classList.contains('input--email')){
+    if (currentField.value !== null) {
+      iconMail.href = 'mailto:' + currentField.value;
+      //que el icono se muestre
+    } if else {
+      //que el icono desaparezca
+    }
+  } else {}
 }
 
 //listener
