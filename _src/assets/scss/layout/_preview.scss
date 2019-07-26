@@ -111,20 +111,31 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 .phone-icon {
-    height: 18px;
+    font-size: 18px;
 }
 
 .card-icon {
-    height: 18px;
+    font-size: 18px;
 }
 
 .linkedin-icon {
-    height: 18px;
+    font-size: 18px;
 }
 
 .github-icon {
-    height: 18px;
+    font-size: 18px;
+}
+//Definir colores para js de paleta
+.palette1 {
+  .name__card {
+    color: $color--dark-green-blue;
+  }
+  .name-job__box {
+    border-left: solid 5px $color--dirty-blue;
+    margin: 0px 0 10px;
+}
 }

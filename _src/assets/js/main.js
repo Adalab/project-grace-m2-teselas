@@ -1,7 +1,6 @@
 'use strict';
 
-
-//inputs que reaccionen
+//Rellenar la tarjeta con los datos del input (name y job)
 const inputName = document.querySelector('.field__fill-name');
 const inputJob = document.querySelector('.field__fill-job');
 const name = document.querySelector('.name__card');
@@ -13,6 +12,12 @@ function fillName (event) {
 function fillJob (event) {
   job.innerHTML = event.currentTarget.value;
 }
-//function fillJob
+
 inputName.addEventListener ('keyup', fillName);
 inputJob.addEventListener ('keyup', fillJob);
+
+//Hacer las paletas de colores interactivas
+//clases y constantes
+
+//handler: asociarlas
+//listener
