@@ -18,10 +18,26 @@ inputName.addEventListener('keyup', fillName);
 inputJob.addEventListener('keyup', fillJob);
 
 //Hacer las paletas de colores interactivas
-//clases y constantes
+//definir y declarar clases y constantes
+const radio1 = document.querySelector('.radio__palette1');
+const radio2 = document.querySelector('.radio__palette2');
+const radio3 = document.querySelector('.radio__palette3');
+
+const selectedRadio = document.querySelector('.card__box');
 
 //handler: asociarlas
+function changeColor (event){
+  selectedRadio.classList.remove('palette1');
+  selectedRadio.classList.remove('palette2');
+  selectedRadio.classList.remove('palette3');
+
+  selectedRadio.classList.add(event.currentTarget.value);
+}
+
 //listener
+radio1.addEventListener('click',changeColor);
+radio2.addEventListener('click',changeColor);
+radio3.addEventListener('click',changeColor);
 
 const titleForm = document.querySelectorAll('.js__title--form');
 
@@ -45,3 +61,4 @@ function ShowOrHide(event) {
 for (const buttonForm of titleForm) {
     buttonForm.addEventListener('click', ShowOrHide);
 }
+
