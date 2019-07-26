@@ -1,6 +1,8 @@
 .share__title {
   position: relative;
   padding-left: 31px;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 .share__title::before {
   content: "\f11c";
@@ -19,7 +21,7 @@
   right: 0;
 }
 .share--card {
-  padding-top: 20px;
+  border-bottom: 1px solid $color--footer--border;
 }
 .icon__form {
   fill: $color--dull-orange;
@@ -68,6 +70,8 @@ margin-bottom: 10px;
 
 .card__created--info {
   flex-direction: column;
+  border: none;
+  margin-bottom: 0;
 }
 
 .share__button-twitter {

@@ -36,6 +36,7 @@
 }
 ::placeholder {
   color: $color--placeholder;
+  padding-left: 10px;
 }
 .photo__button {
   @include txt14($color--white);
