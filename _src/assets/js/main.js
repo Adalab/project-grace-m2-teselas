@@ -63,3 +63,20 @@ for (const buttonForm of titleForm) {
     buttonForm.addEventListener('click', ShowOrHide);
 }
 
+// Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
+//seleccionar y declarar constantes
+const iconCard = document.querySelectorAll('.field__fill-icon');
+
+//handler
+function showIcon(event){
+  console.log(event.currentTarget.value);
+  const value = event.currentTarget.value;
+  if (value !== null){
+
+  }
+}
+
+//listener
+for (const iconForm of iconCard) {
+  iconForm.addEventListener('keyup', showIcon);
+}
