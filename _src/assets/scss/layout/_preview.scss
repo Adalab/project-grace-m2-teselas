@@ -137,5 +137,37 @@
   .name-job__box {
     border-left: solid 5px $color--dirty-blue;
     margin: 0px 0 10px;
+  }
+  .link__icon__card {
+    border: solid 2px $color--hospital-green;
+    color: $color--dark-green-blue;
+  }
 }
+
+.palette2 {
+  .name__card {
+    color: $color--dried-blood;
+  }
+  .name-job__box {
+    border-left: solid 5px $color--rusty-red;
+    margin: 0px 0 10px;
+  }
+  .link__icon__card {
+    border: solid 2px $color--tomato;
+    color: $color--dried-blood;
+  }
+}
+
+.palette3 {
+  .name__card {
+    color: $color--slate;
+  }
+  .name-job__box {
+    border-left: solid 5px $color--faded-orange;
+    margin: 0px 0 10px;
+  }
+  .link__icon__card {
+    border: solid 2px $color--light-grey-blue;
+    color: $color--slate;
+  }
 }
