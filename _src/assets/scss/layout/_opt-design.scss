@@ -6,6 +6,9 @@
 .design__title {
     position: relative;
     padding-left: 31px;
+    @media all and (min-width:768px){
+      margin-top: 7px;
+    }
 }
 
 .design__title::before {
@@ -29,7 +32,6 @@
 .design__form {
     display: flex;
     justify-content: space-between;
-    padding-top: 22px;
 }
 
 .design__form--colors {
