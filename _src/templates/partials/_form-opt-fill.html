@@ -10,17 +10,17 @@
     <div class="fill__form">
         <div class="fill__box--name">
             <label class="fill_name" for="name">nombre completo</label>
-            <input class="field__fill field__fill-name" type="text" name="name" placeholder="Ej: Sally Jill" id="">
+            <input class="field__fill field__fill-name" type="text" name="name" placeholder="Ej: Sally Jill" id="firstName" required>
         </div>
 
         <div class="fill__box--job">
             <label class="fill_job" for="job">puesto</label>
-            <input class="field__fill field__fill-job" type="text" name="job" placeholder="Ej: Front-end unicorn" id="">
+            <input class="field__fill field__fill-job" type="text" name="job" placeholder="Ej: Front-end unicorn" id="job_position" required>
         </div>
 
         <div class="fill__box--photo">
             <label class="fill_photo" for="photo">imagen de perfil</label>
-            <input class="hidden" type="file" name="photo" id="photo" required="">
+            <input class="hidden" type="file" name="photo" id="photo" required>
             <div class="photo__button-preview">
                 <button class="photo__button" type="button">añadir imagen</button>
                 <div class="photo__preview"></div>
@@ -29,7 +29,7 @@
 
         <div class="fill__box--email">
             <label class="fill_email" for="email">email</label>
-            <input class="field__fill" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" id="">
+            <input class="field__fill" type="email" name="email" placeholder="Ej: sally-hill@gmail.com" id="email_account" required>
         </div>
         <div class="fill__box--phone">
             <label class="fill_phone" for="telephone">teléfono</label>
@@ -37,11 +37,11 @@
         </div>
         <div class="fill__box--linkedin">
             <label class="fill_linkedin" for="linkedin">linkedin</label>
-            <input class="field__fill" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="">
+            <input class="field__fill" type="text" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill" id="linkedin" required>
         </div>
         <div class="fill__box--github">
             <label class="fill_github" for="github">github</label>
-            <input class="field__fill" type="text" name="github" placeholder="Ej: @sally-hill" id="">
+            <input class="field__fill" type="text" name="github" placeholder="Ej: @sally-hill" id="github" required>
         </div>
     </div>
 </fieldset>
