@@ -98,6 +98,8 @@ const inputPhone = document.querySelector('.input--phone');
 const inputLinkedin = document.querySelector ('.input--linkedin');
 const inputGithub = document.querySelector ('.input--github');
 
+const linkMail = document.querySelector('.link__icon__card-mail');
+
 const iconMail = document.querySelector('.item2');
 const iconPhone = document.querySelector('.item1');
 const iconLinkedin = document.querySelector('.item3');
@@ -106,6 +108,7 @@ const iconGithub = document.querySelector('.item4');
 function showMailIcon(event){
   if (inputMail.value.length !== 0){
     iconMail.classList.remove('supersecret');
+    linkMail.href = 'mailto:' + inputMail.value;
   } else {
     iconMail.classList.add('supersecret');
   }
