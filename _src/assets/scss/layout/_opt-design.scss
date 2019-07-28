@@ -1,11 +1,11 @@
 .design--card {
     border-bottom: 1px solid $color--footer--border;
-    padding-bottom: 30px;
 }
 
 .design__title {
     position: relative;
     padding-left: 31px;
+    margin-bottom: 7px;
     @media all and (min-width:768px){
       margin-top: 7px;
     }
@@ -32,6 +32,7 @@
 .design__form {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .design__form--colors {
