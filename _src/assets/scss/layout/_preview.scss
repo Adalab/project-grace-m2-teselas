@@ -60,6 +60,9 @@
 .name__card {
     color: $color--dark-green-blue;
     font-size: 18px;
+    width: 220px;
+    height: auto;
+    overflow-x: hidden;
     font-family: $font-family--card;
     font-weight: $weight--bold;
     line-height: 20px;

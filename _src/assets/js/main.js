@@ -9,9 +9,7 @@ const job = document.querySelector('.job__card');
 function fillName(event) {
   if (inputName.value.length === 0){
     name.innerHTML = 'Nombre Apellido';
-  } else if (inputName.value.length >= 15){
-    name.innerHTML = 'Max De 15 Caracteres';
-  }else {
+  } else {
       name.innerHTML = event.currentTarget.value;
   }
 }
