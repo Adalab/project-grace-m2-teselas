@@ -49,21 +49,37 @@ function ShowOrHide(event) {
 
     if (event.currentTarget.classList.contains('design__title')) {
         document.querySelector('.desing__form--container').classList.toggle('drop-down');
+        document.querySelector('.design__title').classList.toggle('design__title2');
+        //agregar y elimir clases a los demas
         document.querySelector('.fill__form').classList.add('drop-down');
         document.querySelector('.share__form').classList.add('drop-down');
+        document.querySelector('.fill__title').classList.remove('fill__title2');
+        document.querySelector('.share__title').classList.remove('share__title2');
+
         console.log(document.querySelector('.design__form'));
 
     } else if (event.currentTarget.classList.contains('fill__title')) {
+        document.querySelector('.fill__form').classList.toggle('drop-down');
+        document.querySelector('.fill__title').classList.toggle('fill__title2');
+
+        //agregar y elimir clases a los demas
         document.querySelector('.share__form').classList.add('drop-down');
         document.querySelector('.desing__form--container').classList.add('drop-down');
-        document.querySelector('.fill__form').classList.toggle('drop-down');
+        document.querySelector('.design__title').classList.remove('design__title2');
+        document.querySelector('.share__title').classList.remove('share__title2');
 
         console.log(document.querySelector('.fill__form'));
 
     } else if (event.currentTarget.classList.contains('share__title')) {
-        document.querySelector('.desing__form--container').classList.add('drop-down');
-        document.querySelector('.fill__form').classList.add('drop-down');
         document.querySelector('.share__form').classList.toggle('drop-down');
+        document.querySelector('.share__title').classList.toggle('share__title2');
+
+        //agregar y elimir clases a los demas
+        document.querySelector('.desing__form--container').classList.add('drop-down');
+        document.querySelector('.design__title').classList.remove('design__title2');
+        document.querySelector('.fill__form').classList.add('drop-down');
+        document.querySelector('.fill__title').classList.remove('fill__title2');
+
 
     }
 }

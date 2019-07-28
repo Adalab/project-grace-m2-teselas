@@ -28,6 +28,10 @@
   position: absolute;
   right: 0;
 }
+.fill__title2::after {
+  content: "\f077";
+  transform: rotate(180deg);
+}
 .fill--card {
   border-bottom: 1px solid $color--footer--border;
 }

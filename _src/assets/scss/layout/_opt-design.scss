@@ -29,6 +29,11 @@
     right: 0;
 }
 
+.design__title2::after {
+  content: "\f077";
+  transform: rotate(180deg);
+}
+
 .design__form {
     display: flex;
     justify-content: space-between;
