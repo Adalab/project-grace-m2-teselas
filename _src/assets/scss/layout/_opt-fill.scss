@@ -1,63 +1,72 @@
 .field__fill {
-  display: block;
-  width: 100%;
-  border: $color--hospital-green 1px solid;
-  height: 30px;
-  margin: 7px 0 20px;
-  padding-left: 10px;
+    display: block;
+    width: 100%;
+    border: $color--hospital-green 1px solid;
+    height: 30px;
+    margin: 7px 0 20px;
+    padding-left: 10px;
 }
+
 .fill__title {
-  position: relative;
-  padding-left: 31px;
-  margin-top:9px;
-  margin-bottom: 7px;
+    position: relative;
+    padding-left: 31px;
+    margin-top: 9px;
+    margin-bottom: 7px;
 }
+
 .fill__title::before {
-  content: "\f11c";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 400;
-  color: $color--dull-orange;
-  position: absolute;
-  left: 0;
+    content: "\f11c";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    color: $color--dull-orange;
+    position: absolute;
+    left: 0;
 }
+
 .fill__title::after {
-  content: "\f077";
-  font-family: "Font Awesome 5 Pro";
-  font-weight: 900;
-  color: $color--text;
-  position: absolute;
-  right: 0;
+    content: "\f078";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: $color--text;
+    position: absolute;
+    right: 0;
 }
+
 .fill__title2::after {
-  content: "\f077";
-  transform: rotate(180deg);
+    content: "\f078";
+    transform: rotate(180deg);
 }
+
 .fill--card {
-  border-bottom: 1px solid $color--footer--border;
+    border-bottom: 1px solid $color--footer--border;
 }
+
 .fill__form {
-  @include txt14($color--dark-green-blue);
-  margin-top: 25px;
-  cursor: pointer;
+    @include txt14($color--dark-green-blue);
+    margin-top: 25px;
+    cursor: pointer;
 }
+
 ::placeholder {
-  color: $color--placeholder;
-  padding-left: 10px;
+    color: $color--placeholder;
+    padding-left: 10px;
 }
+
 .photo__button {
-  @include txt14($color--white);
-  background-color: $color--dull-orange;
-  border-style: none;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    @include txt14($color--white);
+    background-color: $color--dull-orange;
+    border-style: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
 }
+
 .photo__button-preview {
-  margin: 10px 0 20px;
+    margin: 10px 0 20px;
 }
 
 .photo__preview {
-  width: 30px;
-  height: 30px;
-  background-color:transparent;
-  margin-left: 20px;
-  border: 1px solid $color--hospital-green;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    margin-left: 20px;
+    border: 1px solid $color--hospital-green;
 }

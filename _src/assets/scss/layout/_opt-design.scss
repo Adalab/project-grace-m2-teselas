@@ -6,8 +6,8 @@
     position: relative;
     padding-left: 31px;
     margin-bottom: 7px;
-    @media all and (min-width:768px){
-      margin-top: 7px;
+    @media all and (min-width: 768px) {
+        margin-top: 7px;
     }
 }
 
@@ -21,7 +21,7 @@
 }
 
 .design__title::after {
-    content: "\f077";
+    content: "\f078";
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     color: $color--text;
@@ -30,8 +30,8 @@
 }
 
 .design__title2::after {
-  content: "\f077";
-  transform: rotate(180deg);
+    content: "\f078";
+    transform: rotate(180deg);
 }
 
 .design__form {

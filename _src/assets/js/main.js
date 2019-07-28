@@ -7,18 +7,19 @@ const name = document.querySelector('.name__card');
 const job = document.querySelector('.job__card');
 
 function fillName(event) {
-  if (inputName.value.length === 0){
-    name.innerHTML = 'Nombre Apellido';
-  } else {
-      name.innerHTML = event.currentTarget.value;
-  }
+    if (inputName.value.length === 0) {
+        name.innerHTML = 'Nombre Apellido';
+    } else {
+        name.innerHTML = event.currentTarget.value;
+    }
 }
+
 function fillJob(event) {
-  if (inputJob.value.length === 0){
-    job.innerHTML = 'front-end developer';
-  } else {
-    job.innerHTML = event.currentTarget.value;
-  }
+    if (inputJob.value.length === 0) {
+        job.innerHTML = 'front-end developer';
+    } else {
+        job.innerHTML = event.currentTarget.value;
+    }
 }
 
 inputName.addEventListener('keyup', fillName);
@@ -31,16 +32,16 @@ const radio3 = document.querySelector('.radio__palette3');
 
 const selectedRadio = document.querySelector('.card__box');
 
-function changeColor (event){
-  selectedRadio.classList.remove('palette1');
-  selectedRadio.classList.remove('palette2');
-  selectedRadio.classList.remove('palette3');
-  selectedRadio.classList.add(event.currentTarget.value);
+function changeColor(event) {
+    selectedRadio.classList.remove('palette1');
+    selectedRadio.classList.remove('palette2');
+    selectedRadio.classList.remove('palette3');
+    selectedRadio.classList.add(event.currentTarget.value);
 }
 
-radio1.addEventListener('click',changeColor);
-radio2.addEventListener('click',changeColor);
-radio3.addEventListener('click',changeColor);
+radio1.addEventListener('click', changeColor);
+radio2.addEventListener('click', changeColor);
+radio3.addEventListener('click', changeColor);
 
 //Drop-down
 const titleForm = document.querySelectorAll('.js__title--form');
@@ -50,7 +51,7 @@ function ShowOrHide(event) {
     if (event.currentTarget.classList.contains('design__title')) {
         document.querySelector('.desing__form--container').classList.toggle('drop-down');
         document.querySelector('.design__title').classList.toggle('design__title2');
-        //agregar y elimir clases a los demas
+        //agregar y eliminar clases a los demas
         document.querySelector('.fill__form').classList.add('drop-down');
         document.querySelector('.share__form').classList.add('drop-down');
         document.querySelector('.fill__title').classList.remove('fill__title2');
@@ -120,8 +121,8 @@ for (const buttonForm of titleForm) {
 //seleccionar y declarar constantes
 const inputMail = document.querySelector('.input--email');
 const inputPhone = document.querySelector('.input--phone');
-const inputLinkedin = document.querySelector ('.input--linkedin');
-const inputGithub = document.querySelector ('.input--github');
+const inputLinkedin = document.querySelector('.input--linkedin');
+const inputGithub = document.querySelector('.input--github');
 
 const linkMail = document.querySelector('.link__icon__card-mail');
 const linkPhone = document.querySelector('.link__icon__card-phone');
@@ -133,36 +134,39 @@ const iconPhone = document.querySelector('.item1');
 const iconLinkedin = document.querySelector('.item3');
 const iconGithub = document.querySelector('.item4');
 //handler
-function showMailIcon(event){
-  if (inputMail.value.length !== 0){
-    iconMail.classList.remove('supersecret');
-    linkMail.href = 'mailto:' + inputMail.value;
-  } else {
-    iconMail.classList.add('supersecret');
-  }
+function showMailIcon(event) {
+    if (inputMail.value.length !== 0) {
+        iconMail.classList.remove('supersecret');
+        linkMail.href = 'mailto:' + inputMail.value;
+    } else {
+        iconMail.classList.add('supersecret');
+    }
 }
-function showPhoneIcon(event){
-  if (inputPhone.value.length !== 0){
-    iconPhone.classList.remove('supersecret');
-  } else {
-    iconPhone.classList.add('supersecret');
-  }
+
+function showPhoneIcon(event) {
+    if (inputPhone.value.length !== 0) {
+        iconPhone.classList.remove('supersecret');
+    } else {
+        iconPhone.classList.add('supersecret');
+    }
 }
-function showLinkedinIcon(event){
-  if (inputLinkedin.value.length !== 0){
-    iconLinkedin.classList.remove('supersecret');
-    linkLinkedin.href = inputLinkedin.value;
-  } else {
-    iconLinkedin.classList.add('supersecret');
-  }
+
+function showLinkedinIcon(event) {
+    if (inputLinkedin.value.length !== 0) {
+        iconLinkedin.classList.remove('supersecret');
+        linkLinkedin.href = inputLinkedin.value;
+    } else {
+        iconLinkedin.classList.add('supersecret');
+    }
 }
-function showGithubIcon(event){
-  if (inputGithub.value.length !== 0){
-    iconGithub.classList.remove('supersecret');
-    linkGithub.href = inputGithub.value;
-  } else {
-    iconGithub.classList.add('supersecret');
-  }
+
+function showGithubIcon(event) {
+    if (inputGithub.value.length !== 0) {
+        iconGithub.classList.remove('supersecret');
+        linkGithub.href = inputGithub.value;
+    } else {
+        iconGithub.classList.add('supersecret');
+    }
 }
 //listener
 inputMail.addEventListener('keyup', showMailIcon);
