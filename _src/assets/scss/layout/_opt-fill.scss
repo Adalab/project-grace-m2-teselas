@@ -34,6 +34,7 @@
 .fill__form {
   @include txt14($color--dark-green-blue);
   margin-top: 25px;
+  cursor: pointer;
 }
 ::placeholder {
   color: $color--placeholder;

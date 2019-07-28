@@ -20,6 +20,7 @@
 .share__title {
     @include txt18($color--text);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .created--message {
