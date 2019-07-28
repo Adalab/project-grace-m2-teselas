@@ -48,17 +48,23 @@ const titleForm = document.querySelectorAll('.js__title--form');
 function ShowOrHide(event) {
 
     if (event.currentTarget.classList.contains('design__title')) {
-        document.querySelector('.design__form').classList.toggle('drop-down');
-
+        document.querySelector('.desing__form--container').classList.toggle('drop-down');
+        document.querySelector('.fill__form').classList.add('drop-down');
+        document.querySelector('.share__form').classList.add('drop-down');
         console.log(document.querySelector('.design__form'));
 
     } else if (event.currentTarget.classList.contains('fill__title')) {
+        document.querySelector('.share__form').classList.add('drop-down');
+        document.querySelector('.desing__form--container').classList.add('drop-down');
         document.querySelector('.fill__form').classList.toggle('drop-down');
 
         console.log(document.querySelector('.fill__form'));
 
     } else if (event.currentTarget.classList.contains('share__title')) {
+        document.querySelector('.desing__form--container').classList.add('drop-down');
+        document.querySelector('.fill__form').classList.add('drop-down');
         document.querySelector('.share__form').classList.toggle('drop-down');
+
     }
 }
 
