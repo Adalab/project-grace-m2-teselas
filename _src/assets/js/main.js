@@ -95,17 +95,44 @@ for (const buttonForm of titleForm) {
 //seleccionar y declarar constantes
 const inputMail = document.querySelector('.input--email');
 const inputPhone = document.querySelector('.input--phone');
-
+const inputLinkedin = document.querySelector ('.input--linkedin');
+const inputGithub = document.querySelector ('.input--github');
 
 const iconMail = document.querySelector('.item2');
+const iconPhone = document.querySelector('.item1');
+const iconLinkedin = document.querySelector('.item3');
+const iconGithub = document.querySelector('.item4');
 //handler
-function showIcon(event){
+function showMailIcon(event){
   if (inputMail.value.length !== 0){
     iconMail.classList.remove('supersecret');
   } else {
     iconMail.classList.add('supersecret');
   }
 }
-
+function showPhoneIcon(event){
+  if (inputPhone.value.length !== 0){
+    iconPhone.classList.remove('supersecret');
+  } else {
+    iconPhone.classList.add('supersecret');
+  }
+}
+function showLinkedinIcon(event){
+  if (inputLinkedin.value.length !== 0){
+    iconLinkedin.classList.remove('supersecret');
+  } else {
+    iconLinkedin.classList.add('supersecret');
+  }
+}
+function showGithubIcon(event){
+  if (inputGithub.value.length !== 0){
+    iconGithub.classList.remove('supersecret');
+  } else {
+    iconGithub.classList.add('supersecret');
+  }
+}
 //listener
-inputMail.addEventListener('keyup', showIcon);
+inputMail.addEventListener('keyup', showMailIcon);
+inputPhone.addEventListener('keyup', showPhoneIcon);
+inputLinkedin.addEventListener('keyup', showLinkedinIcon);
+inputGithub.addEventListener('keyup', showGithubIcon);
