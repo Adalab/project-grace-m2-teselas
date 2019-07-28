@@ -7,11 +7,18 @@ const name = document.querySelector('.name__card');
 const job = document.querySelector('.job__card');
 
 function fillName(event) {
-    name.innerHTML = event.currentTarget.value;
+  if (inputName.value.length === 0){
+    name.innerHTML = 'Nombre Apellido';
+  } else {
+      name.innerHTML = event.currentTarget.value;
+  }
 }
-
 function fillJob(event) {
+  if (inputJob.value.length === 0){
+    job.innerHTML = 'front-end developer';
+  } else {
     job.innerHTML = event.currentTarget.value;
+  }
 }
 
 inputName.addEventListener('keyup', fillName);
