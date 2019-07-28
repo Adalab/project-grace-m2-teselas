@@ -99,6 +99,9 @@ const inputLinkedin = document.querySelector ('.input--linkedin');
 const inputGithub = document.querySelector ('.input--github');
 
 const linkMail = document.querySelector('.link__icon__card-mail');
+const linkPhone = document.querySelector('.link__icon__card-phone');
+const linkLinkedin = document.querySelector('.link__icon__card-linkedin');
+const linkGithub = document.querySelector('.link__icon__card-github');
 
 const iconMail = document.querySelector('.item2');
 const iconPhone = document.querySelector('.item1');
@@ -123,6 +126,7 @@ function showPhoneIcon(event){
 function showLinkedinIcon(event){
   if (inputLinkedin.value.length !== 0){
     iconLinkedin.classList.remove('supersecret');
+    linkLinkedin.href = inputLinkedin.value;
   } else {
     iconLinkedin.classList.add('supersecret');
   }
@@ -130,6 +134,7 @@ function showLinkedinIcon(event){
 function showGithubIcon(event){
   if (inputGithub.value.length !== 0){
     iconGithub.classList.remove('supersecret');
+    linkGithub.href = inputGithub.value;
   } else {
     iconGithub.classList.add('supersecret');
   }
