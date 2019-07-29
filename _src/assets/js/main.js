@@ -173,3 +173,37 @@ inputMail.addEventListener('keyup', showMailIcon);
 inputPhone.addEventListener('keyup', showPhoneIcon);
 inputLinkedin.addEventListener('keyup', showLinkedinIcon);
 inputGithub.addEventListener('keyup', showGithubIcon);
+
+
+//reset-btn
+
+const btnReset = document.querySelector('.reset__button');
+const pallete1check= document.querySelector('.radio__palette1');
+
+function resetmood(event){
+  console.log('hola mundo');
+
+  //colocar paleta por defecto
+  selectedRadio.classList.remove('palette1');
+  selectedRadio.classList.remove('palette2');
+  selectedRadio.classList.remove('palette3');
+
+
+  //Que los campos del formulario esten vacios
+  inputName.value = '';
+  inputJob.value = '';
+  name.innerHTML = 'Nombre y Apellido';
+  job.innerHTML = 'front-end developer';
+
+  inputMail.value ='';
+  inputPhone.value ='';
+  inputLinkedin.value ='';
+  inputGithub.value ='';
+
+  iconMail.classList.add('supersecret');
+  iconPhone.classList.add('supersecret');
+  iconLinkedin.classList.add('supersecret');
+  iconGithub.classList.add('supersecret');
+}
+
+btnReset.addEventListener('click', resetmood);
