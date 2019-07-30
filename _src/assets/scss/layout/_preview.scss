@@ -63,6 +63,7 @@
     width: 220px;
     height: auto;
     overflow-x: hidden;
+    word-wrap: break-word;
     font-family: $font-family--card;
     font-weight: $weight--bold;
     line-height: 20px;
@@ -75,6 +76,7 @@
     width: 220px;
     height: auto;
     overflow-x: hidden;
+    word-wrap: break-word;
     font-family: $font-family--card;
     font-weight: $weight--regular;
     line-height: 20px;
