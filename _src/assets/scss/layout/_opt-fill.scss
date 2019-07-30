@@ -5,6 +5,7 @@
     height: 30px;
     margin: 7px 0 20px;
     padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .fill__title {
@@ -49,7 +50,6 @@
 
 ::placeholder {
     color: $color--placeholder;
-    padding-left: 10px;
 }
 
 .photo__button {
