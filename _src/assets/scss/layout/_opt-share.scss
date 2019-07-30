@@ -79,7 +79,9 @@
     text-align: center;
     justify-content: center;
 }
-
+.grey__create__button {
+  background-color: #d5d5d5;
+}
 .card__created--info {
     flex-direction: column;
     border: none;
@@ -103,3 +105,4 @@
     width: 18px;
     height: 18px;
 }
+
