@@ -178,7 +178,7 @@ inputGithub.addEventListener('keyup', showGithubIcon);
 //reset-btn
 
 const btnReset = document.querySelector('.reset__button');
-const pallete1check= document.querySelector('.radio__palette1');
+
 
 function resetmood(event){
   console.log('hola mundo');
@@ -187,10 +187,15 @@ function resetmood(event){
   selectedRadio.classList.remove('palette1');
   selectedRadio.classList.remove('palette2');
   selectedRadio.classList.remove('palette3');
+  let ele = document.getElementsByName('palette');
+  for (let i=0;i<ele.length;i++) {
+    ele[i].checked = false;
+  }
+  radio1.checked = true;
 
 
   //Que los campos del formulario esten vacios
-  inputName.value = '';
+    inputName.value = '';
   inputJob.value = '';
   name.innerHTML = 'Nombre y Apellido';
   job.innerHTML = 'front-end developer';
