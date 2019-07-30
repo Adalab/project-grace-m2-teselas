@@ -146,6 +146,7 @@ function showMailIcon(event) {
 function showPhoneIcon(event) {
     if (inputPhone.value.length !== 0) {
         iconPhone.classList.remove('supersecret');
+        linkPhone.href = 'tel:' + inputPhone.value;
     } else {
         iconPhone.classList.add('supersecret');
     }
