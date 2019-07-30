@@ -187,10 +187,6 @@ function resetmood(event){
   selectedRadio.classList.remove('palette1');
   selectedRadio.classList.remove('palette2');
   selectedRadio.classList.remove('palette3');
-  let ele = document.getElementsByName('palette');
-  for (let i=0;i<ele.length;i++) {
-    ele[i].checked = false;
-  }
   radio1.checked = true;
 
 
