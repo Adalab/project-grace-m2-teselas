@@ -155,7 +155,7 @@ function showPhoneIcon(event) {
 function showLinkedinIcon(event) {
     if (inputLinkedin.value.length !== 0) {
         iconLinkedin.classList.remove('supersecret');
-        linkLinkedin.href = inputLinkedin.value;
+        linkLinkedin.href = 'https://www.linkedin.com/in/' + inputLinkedin.value;
     } else {
         iconLinkedin.classList.add('supersecret');
     }
@@ -164,7 +164,7 @@ function showLinkedinIcon(event) {
 function showGithubIcon(event) {
     if (inputGithub.value.length !== 0) {
         iconGithub.classList.remove('supersecret');
-        linkGithub.href = inputGithub.value;
+        linkGithub.href = 'https://github.com/' + inputGithub.value;
     } else {
         iconGithub.classList.add('supersecret');
     }
