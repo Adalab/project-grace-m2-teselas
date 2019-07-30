@@ -189,7 +189,6 @@ const btnReset = document.querySelector('.reset__button');
 
 
 function resetmood(event) {
-  console.log('hola mundo');
 
   //colocar paleta por defecto
   selectedRadio.classList.remove('palette1');
@@ -203,7 +202,7 @@ function resetmood(event) {
   //Que los campos del formulario esten vacios
   inputName.value = '';
   inputJob.value = '';
-  name.innerHTML = 'Nombre y Apellido';
+  name.innerHTML = 'Nombre Apellido';
   job.innerHTML = 'front-end developer';
 
   inputMail.value = '';
