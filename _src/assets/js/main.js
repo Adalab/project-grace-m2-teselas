@@ -7,19 +7,19 @@ const name = document.querySelector('.name__card');
 const job = document.querySelector('.job__card');
 
 function fillName(event) {
-    if (inputName.value.length === 0) {
-        name.innerHTML = 'Nombre Apellido';
-    } else {
-        name.innerHTML = event.currentTarget.value;
-    }
+  if (inputName.value.length === 0) {
+    name.innerHTML = 'Nombre Apellido';
+  } else {
+    name.innerHTML = event.currentTarget.value;
+  }
 }
 
 function fillJob(event) {
-    if (inputJob.value.length === 0) {
-        job.innerHTML = 'front-end developer';
-    } else {
-        job.innerHTML = event.currentTarget.value;
-    }
+  if (inputJob.value.length === 0) {
+    job.innerHTML = 'front-end developer';
+  } else {
+    job.innerHTML = event.currentTarget.value;
+  }
 }
 
 inputName.addEventListener('keyup', fillName);
@@ -29,64 +29,71 @@ inputJob.addEventListener('keyup', fillJob);
 const radio1 = document.querySelector('.radio__palette1');
 const radio2 = document.querySelector('.radio__palette2');
 const radio3 = document.querySelector('.radio__palette3');
+const radio4 = document.querySelector('.radio__palette4');
+const radio5 = document.querySelector('.radio__palette5');
 
 const selectedRadio = document.querySelector('.card__box');
 
 function changeColor(event) {
-    selectedRadio.classList.remove('palette1');
-    selectedRadio.classList.remove('palette2');
-    selectedRadio.classList.remove('palette3');
-    selectedRadio.classList.add(event.currentTarget.value);
+  selectedRadio.classList.remove('palette1');
+  selectedRadio.classList.remove('palette2');
+  selectedRadio.classList.remove('palette3');
+  selectedRadio.classList.remove('palette4');
+  selectedRadio.classList.remove('palette5');
+
+  selectedRadio.classList.add(event.currentTarget.value);
 }
 
 radio1.addEventListener('click', changeColor);
 radio2.addEventListener('click', changeColor);
 radio3.addEventListener('click', changeColor);
+radio4.addEventListener('click', changeColor);
+radio5.addEventListener('click', changeColor);
 
 //Drop-down
 const titleForm = document.querySelectorAll('.js__title--form');
 
 function ShowOrHide(event) {
 
-    if (event.currentTarget.classList.contains('design__title')) {
-        document.querySelector('.desing__form--container').classList.toggle('drop-down');
-        document.querySelector('.design__title').classList.toggle('design__title2');
-        //agregar y eliminar clases a los demas
-        document.querySelector('.fill__form').classList.add('drop-down');
-        document.querySelector('.share__form').classList.add('drop-down');
-        document.querySelector('.fill__title').classList.remove('fill__title2');
-        document.querySelector('.share__title').classList.remove('share__title2');
+  if (event.currentTarget.classList.contains('design__title')) {
+    document.querySelector('.desing__form--container').classList.toggle('drop-down');
+    document.querySelector('.design__title').classList.toggle('design__title2');
+    //agregar y eliminar clases a los demas
+    document.querySelector('.fill__form').classList.add('drop-down');
+    document.querySelector('.share__form').classList.add('drop-down');
+    document.querySelector('.fill__title').classList.remove('fill__title2');
+    document.querySelector('.share__title').classList.remove('share__title2');
 
-        console.log(document.querySelector('.design__form'));
+    console.log(document.querySelector('.design__form'));
 
-    } else if (event.currentTarget.classList.contains('fill__title')) {
-        document.querySelector('.fill__form').classList.toggle('drop-down');
-        document.querySelector('.fill__title').classList.toggle('fill__title2');
+  } else if (event.currentTarget.classList.contains('fill__title')) {
+    document.querySelector('.fill__form').classList.toggle('drop-down');
+    document.querySelector('.fill__title').classList.toggle('fill__title2');
 
-        //agregar y elimir clases a los demas
-        document.querySelector('.share__form').classList.add('drop-down');
-        document.querySelector('.desing__form--container').classList.add('drop-down');
-        document.querySelector('.design__title').classList.remove('design__title2');
-        document.querySelector('.share__title').classList.remove('share__title2');
+    //agregar y elimir clases a los demas
+    document.querySelector('.share__form').classList.add('drop-down');
+    document.querySelector('.desing__form--container').classList.add('drop-down');
+    document.querySelector('.design__title').classList.remove('design__title2');
+    document.querySelector('.share__title').classList.remove('share__title2');
 
-        console.log(document.querySelector('.fill__form'));
+    console.log(document.querySelector('.fill__form'));
 
-    } else if (event.currentTarget.classList.contains('share__title')) {
-        document.querySelector('.share__form').classList.toggle('drop-down');
-        document.querySelector('.share__title').classList.toggle('share__title2');
+  } else if (event.currentTarget.classList.contains('share__title')) {
+    document.querySelector('.share__form').classList.toggle('drop-down');
+    document.querySelector('.share__title').classList.toggle('share__title2');
 
-        //agregar y elimir clases a los demas
-        document.querySelector('.desing__form--container').classList.add('drop-down');
-        document.querySelector('.design__title').classList.remove('design__title2');
-        document.querySelector('.fill__form').classList.add('drop-down');
-        document.querySelector('.fill__title').classList.remove('fill__title2');
+    //agregar y elimir clases a los demas
+    document.querySelector('.desing__form--container').classList.add('drop-down');
+    document.querySelector('.design__title').classList.remove('design__title2');
+    document.querySelector('.fill__form').classList.add('drop-down');
+    document.querySelector('.fill__title').classList.remove('fill__title2');
 
 
-    }
+  }
 }
 
 for (const buttonForm of titleForm) {
-    buttonForm.addEventListener('click', ShowOrHide);
+  buttonForm.addEventListener('click', ShowOrHide);
 }
 
 // Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
@@ -135,38 +142,38 @@ const iconLinkedin = document.querySelector('.item3');
 const iconGithub = document.querySelector('.item4');
 //handler
 function showMailIcon(event) {
-    if (inputMail.value.length !== 0) {
-        iconMail.classList.remove('supersecret');
-        linkMail.href = 'mailto:' + inputMail.value;
-    } else {
-        iconMail.classList.add('supersecret');
-    }
+  if (inputMail.value.length !== 0) {
+    iconMail.classList.remove('supersecret');
+    linkMail.href = 'mailto:' + inputMail.value;
+  } else {
+    iconMail.classList.add('supersecret');
+  }
 }
 
 function showPhoneIcon(event) {
-    if (inputPhone.value.length !== 0) {
-        iconPhone.classList.remove('supersecret');
-    } else {
-        iconPhone.classList.add('supersecret');
-    }
+  if (inputPhone.value.length !== 0) {
+    iconPhone.classList.remove('supersecret');
+  } else {
+    iconPhone.classList.add('supersecret');
+  }
 }
 
 function showLinkedinIcon(event) {
-    if (inputLinkedin.value.length !== 0) {
-        iconLinkedin.classList.remove('supersecret');
-        linkLinkedin.href = inputLinkedin.value;
-    } else {
-        iconLinkedin.classList.add('supersecret');
-    }
+  if (inputLinkedin.value.length !== 0) {
+    iconLinkedin.classList.remove('supersecret');
+    linkLinkedin.href = inputLinkedin.value;
+  } else {
+    iconLinkedin.classList.add('supersecret');
+  }
 }
 
 function showGithubIcon(event) {
-    if (inputGithub.value.length !== 0) {
-        iconGithub.classList.remove('supersecret');
-        linkGithub.href = inputGithub.value;
-    } else {
-        iconGithub.classList.add('supersecret');
-    }
+  if (inputGithub.value.length !== 0) {
+    iconGithub.classList.remove('supersecret');
+    linkGithub.href = inputGithub.value;
+  } else {
+    iconGithub.classList.add('supersecret');
+  }
 }
 //listener
 inputMail.addEventListener('keyup', showMailIcon);
@@ -180,26 +187,28 @@ inputGithub.addEventListener('keyup', showGithubIcon);
 const btnReset = document.querySelector('.reset__button');
 
 
-function resetmood(event){
+function resetmood(event) {
   console.log('hola mundo');
 
   //colocar paleta por defecto
   selectedRadio.classList.remove('palette1');
   selectedRadio.classList.remove('palette2');
   selectedRadio.classList.remove('palette3');
+  selectedRadio.classList.remove('palette4');
+  selectedRadio.classList.remove('palette5');
   radio1.checked = true;
 
 
   //Que los campos del formulario esten vacios
-    inputName.value = '';
+  inputName.value = '';
   inputJob.value = '';
   name.innerHTML = 'Nombre y Apellido';
   job.innerHTML = 'front-end developer';
 
-  inputMail.value ='';
-  inputPhone.value ='';
-  inputLinkedin.value ='';
-  inputGithub.value ='';
+  inputMail.value = '';
+  inputPhone.value = '';
+  inputLinkedin.value = '';
+  inputGithub.value = '';
 
   iconMail.classList.add('supersecret');
   iconPhone.classList.add('supersecret');

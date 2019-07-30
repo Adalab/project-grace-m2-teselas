@@ -178,6 +178,33 @@
   }
 }
 
+.palette4 {
+  .name__card {
+    color: $color--purple;
+  }
+  .name-job__box {
+    border-left: solid 5px $color--medium-orchid;
+    margin: 0px 0 10px;
+  }
+  .link__icon__card {
+    border: solid 2px $color--light-purple;
+    color: $color--purple;
+  }
+}
+
+.palette5 {
+  .name__card {
+    color: $color--super-dark-green;
+  }
+  .name-job__box {
+    border-left: solid 5px $color--green;
+    margin: 0px 0 10px;
+  }
+  .link__icon__card {
+    border: solid 2px $color--lawnish-green;
+    color: $color--super-dark-green;
+  }
+}
 .supersecret {
   display: none;
 }
