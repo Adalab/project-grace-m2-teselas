@@ -151,29 +151,30 @@ function showMailIcon(event) {
 }
 
 function showPhoneIcon(event) {
-  if (inputPhone.value.length !== 0) {
-    iconPhone.classList.remove('supersecret');
-  } else {
-    iconPhone.classList.add('supersecret');
-  }
+    if (inputPhone.value.length !== 0) {
+        iconPhone.classList.remove('supersecret');
+        linkPhone.href = 'tel:' + inputPhone.value;
+    } else {
+        iconPhone.classList.add('supersecret');
+    }
 }
 
 function showLinkedinIcon(event) {
-  if (inputLinkedin.value.length !== 0) {
-    iconLinkedin.classList.remove('supersecret');
-    linkLinkedin.href = inputLinkedin.value;
-  } else {
-    iconLinkedin.classList.add('supersecret');
-  }
+    if (inputLinkedin.value.length !== 0) {
+        iconLinkedin.classList.remove('supersecret');
+        linkLinkedin.href = 'https://www.linkedin.com/in/' + inputLinkedin.value;
+    } else {
+        iconLinkedin.classList.add('supersecret');
+    }
 }
 
 function showGithubIcon(event) {
-  if (inputGithub.value.length !== 0) {
-    iconGithub.classList.remove('supersecret');
-    linkGithub.href = inputGithub.value;
-  } else {
-    iconGithub.classList.add('supersecret');
-  }
+    if (inputGithub.value.length !== 0) {
+        iconGithub.classList.remove('supersecret');
+        linkGithub.href = 'https://github.com/' + inputGithub.value;
+    } else {
+        iconGithub.classList.add('supersecret');
+    }
 }
 //listener
 inputMail.addEventListener('keyup', showMailIcon);
