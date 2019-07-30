@@ -1,3 +1,3 @@
-# Repositorio proyecto grupal módulo 2
+# Repositorio proyecto grupal módulo 2 - Teselas
 
 Proyecto Awesome Profile Cards
