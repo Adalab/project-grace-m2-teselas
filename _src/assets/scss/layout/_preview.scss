@@ -104,11 +104,19 @@
     color: $color--text;
 }
 
-.image-card {
-    width: 240px;
-    height: auto;
+.image-card, .foto__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.foto__preview {
+  width: 30px;
+  height: 30px;
+}
+.image-card {
+  width: 240px;
+  height: 200px;
+}
 .link__icon__card {
     width: 32px;
     height: 32px;
