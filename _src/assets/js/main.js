@@ -217,3 +217,6 @@ function resetmood(event) {
 }
 
 btnReset.addEventListener('click', resetmood);
+
+const defaultImage = document.querySelector('.js__profile-image');
+defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
