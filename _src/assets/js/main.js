@@ -220,3 +220,18 @@ btnReset.addEventListener('click', resetmood);
 
 const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
+
+
+// function fillObject
+
+const userDefault = {
+  "palette": 1,
+  "name": "Nombre Apellidos",
+  "job": "front-end developer",
+  "phone": "",
+  "email": "",
+  "linkedin": "",
+  "github": "",
+  "photo": defaultUrlImage
+}
+console.log(userDefault);
