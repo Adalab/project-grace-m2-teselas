@@ -41,3 +41,12 @@
         margin: 0px;
     }
 }
+.logo-teselas {
+  width: 80px;
+  @media all and (max-width:767px){
+    padding-bottom: 10px;
+  }
+  @media all and (min-width: 768px) {
+    padding-right: 100px;
+  }
+}
