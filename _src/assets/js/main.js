@@ -32,6 +32,10 @@ const radio3 = document.querySelector('.radio__palette3');
 const radio4 = document.querySelector('.radio__palette4');
 const radio5 = document.querySelector('.radio__palette5');
 
+// if (selectedRadio.classList.contains('palette1')) {
+
+// }
+
 const selectedRadio = document.querySelector('.card__box');
 
 function changeColor(event) {
@@ -64,7 +68,6 @@ function ShowOrHide(event) {
     document.querySelector('.fill__title').classList.remove('fill__title2');
     document.querySelector('.share__title').classList.remove('share__title2');
 
-    console.log(document.querySelector('.design__form'));
 
   } else if (event.currentTarget.classList.contains('fill__title')) {
     document.querySelector('.fill__form').classList.toggle('drop-down');
@@ -75,8 +78,6 @@ function ShowOrHide(event) {
     document.querySelector('.desing__form--container').classList.add('drop-down');
     document.querySelector('.design__title').classList.remove('design__title2');
     document.querySelector('.share__title').classList.remove('share__title2');
-
-    console.log(document.querySelector('.fill__form'));
 
   } else if (event.currentTarget.classList.contains('share__title')) {
     document.querySelector('.share__form').classList.toggle('drop-down');
@@ -221,8 +222,8 @@ btnReset.addEventListener('click', resetmood);
 const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 
-
-// function fillObject
+//Crear el botón para mandar la petición a la API
+const btnCardCreation = document.querySelector('.create__button');
 
 const userDefault = {
   "palette": 1,
@@ -234,4 +235,37 @@ const userDefault = {
   "github": "",
   "photo": defaultUrlImage
 }
-console.log(userDefault);
+/* const userFilled = {
+  "palette": 1,
+  "name": inputName.value,
+  "job": inputJob.value,
+  "phone": inputPhone,
+  "email": inputMail,
+  "linkedin": inputLinkedin,
+  "github": inputGithub,
+  "photo": defaultUrlImage,
+} */
+
+function sendData(){
+  const userFilled = {
+    "palette": 1,
+    "name": "María García",
+    "job": "Front-end developer",
+    "phone": "+34 666666666",
+    "email": "mariagar@example.com",
+    "linkedin": "mariagar",
+    "github": "mariagar",
+    "photo": "data:image/png;base64,2342ba..."
+  }
+
+    fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+      method: 'POST',
+      body: JSON.stringify(userFilled),
+      headers: {
+        'content-type': 'application/json'
+      }})
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
+
+btnCardCreation.addEventListener('click', sendData);
