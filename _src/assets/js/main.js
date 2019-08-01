@@ -220,3 +220,25 @@ btnReset.addEventListener('click', resetmood);
 
 const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
+
+
+// api first try
+
+const = userDefault {
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: ''
+}
+//dentro de unaa funcion
+
+//handler
+// fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/')
+
+//   .then(response => response.json())
+//   .then(data => document.body.innerHTML = data.result);
+// //listener --> el click sobre el boton de crear tarjeta
