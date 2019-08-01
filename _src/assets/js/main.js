@@ -188,8 +188,12 @@ inputGithub.addEventListener('keyup', showGithubIcon);
 const btnReset = document.querySelector('.reset__button');
 
 
-function resetmood(event) {
+const defaultImage = document.querySelector('.js__profile-image');
+defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 
+function resetmood(event) {
+  defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
+  profilePreview.style.backgroundImage= '';
   //colocar paleta por defecto
   selectedRadio.classList.remove('palette1');
   selectedRadio.classList.remove('palette2');
@@ -218,5 +222,3 @@ function resetmood(event) {
 
 btnReset.addEventListener('click', resetmood);
 
-const defaultImage = document.querySelector('.js__profile-image');
-defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
