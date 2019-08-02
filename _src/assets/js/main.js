@@ -197,8 +197,7 @@ function resetmood(event) {
 
 btnReset.addEventListener('click', resetmood);
 
-const defaultImage = document.querySelector('.js__profile-image');
-defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
+profileImage.style.backgroundImage = `url(${defaultUrlImage})`;
 
 //Crear el botón para mandar la petición a la API
 const btnCardCreation = document.querySelector('.create__button');
@@ -223,7 +222,11 @@ const userDefault = {
   "github": inputGithub,
   "photo": defaultUrlImage,
 } */
+const form = document.querySelector('.create__card');
 
+function  notSend(event){
+  event.preventDefault();
+}
 function sendData(json){
   const userFilled = {
     "palette": 1,
@@ -239,11 +242,12 @@ function sendData(json){
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
       body: JSON.stringify(json),
-      // headers: {
-      //   'content-type': 'application/json'
+      headers: {
+        'content-type': 'application/json'
       }})
     .then(response => response.json())
     .then(data => console.log(data))
 }
 
+form.addEventListener('submit',notSend)
 btnCardCreation.addEventListener('click', sendData);
