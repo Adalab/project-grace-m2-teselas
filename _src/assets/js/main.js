@@ -97,32 +97,6 @@ for (const buttonForm of titleForm) {
   buttonForm.addEventListener('click', ShowOrHide);
 }
 
-// Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
-//seleccionar y declarar constantes
-// const iconCard = document.querySelectorAll('.field__fill-icon');
-// const iconPhone = document.querySelector('.li--card, .item1');
-// const iconMail = document.querySelector('.li--card, .item2');
-// const iconLinkedin = document.querySelector('.li--card, .item3');
-// const iconGithub = document.querySelector('.li--card, .item4');
-
-//handler
-// function showIcon(event){
-//   console.log(event.currentTarget.value);
-//   const currentField = event.currentTarget;
-//   if (currentField.classList.contains('input--email')){
-//     if (currentField.value !== null) {
-//       iconMail.href = 'mailto:' + currentField.value;
-//       //que el icono se muestre
-//     } if else {
-//       //que el icono desaparezca
-//     }
-//   } else {}
-// }
-
-//listener
-// for (const iconForm of iconCard) {
-//   iconForm.addEventListener('keyup', showIcon);
-// }
 
 
 // Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
@@ -246,7 +220,7 @@ const userDefault = {
   "photo": defaultUrlImage,
 } */
 
-function sendData(){
+function sendData(json){
   const userFilled = {
     "palette": 1,
     "name": "María García",
@@ -260,9 +234,9 @@ function sendData(){
 
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
-      body: JSON.stringify(userFilled),
-      headers: {
-        'content-type': 'application/json'
+      body: JSON.stringify(json),
+      // headers: {
+      //   'content-type': 'application/json'
       }})
     .then(response => response.json())
     .then(data => console.log(data))
