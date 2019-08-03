@@ -7,19 +7,19 @@ const name = document.querySelector('.name__card');
 const job = document.querySelector('.job__card');
 
 function fillName(event) {
-  if (inputName.value.length === 0) {
-    name.innerHTML = 'Nombre Apellido';
-  } else {
-    name.innerHTML = event.currentTarget.value;
-  }
+    if (inputName.value.length === 0) {
+        name.innerHTML = 'Nombre Apellido';
+    } else {
+        name.innerHTML = event.currentTarget.value;
+    }
 }
 
 function fillJob(event) {
-  if (inputJob.value.length === 0) {
-    job.innerHTML = 'front-end developer';
-  } else {
-    job.innerHTML = event.currentTarget.value;
-  }
+    if (inputJob.value.length === 0) {
+        job.innerHTML = 'front-end developer';
+    } else {
+        job.innerHTML = event.currentTarget.value;
+    }
 }
 
 inputName.addEventListener('keyup', fillName);
@@ -39,13 +39,13 @@ const radio5 = document.querySelector('.radio__palette5');
 const selectedRadio = document.querySelector('.card__box');
 
 function changeColor(event) {
-  selectedRadio.classList.remove('palette1');
-  selectedRadio.classList.remove('palette2');
-  selectedRadio.classList.remove('palette3');
-  selectedRadio.classList.remove('palette4');
-  selectedRadio.classList.remove('palette5');
+    selectedRadio.classList.remove('palette1');
+    selectedRadio.classList.remove('palette2');
+    selectedRadio.classList.remove('palette3');
+    selectedRadio.classList.remove('palette4');
+    selectedRadio.classList.remove('palette5');
 
-  selectedRadio.classList.add(event.currentTarget.value);
+    selectedRadio.classList.add(event.currentTarget.value);
 }
 
 radio1.addEventListener('click', changeColor);
@@ -59,42 +59,42 @@ const titleForm = document.querySelectorAll('.js__title--form');
 
 function ShowOrHide(event) {
 
-  if (event.currentTarget.classList.contains('design__title')) {
-    document.querySelector('.desing__form--container').classList.toggle('drop-down');
-    document.querySelector('.design__title').classList.toggle('design__title2');
-    //agregar y eliminar clases a los demas
-    document.querySelector('.fill__form').classList.add('drop-down');
-    document.querySelector('.share__form').classList.add('drop-down');
-    document.querySelector('.fill__title').classList.remove('fill__title2');
-    document.querySelector('.share__title').classList.remove('share__title2');
+    if (event.currentTarget.classList.contains('design__title')) {
+        document.querySelector('.desing__form--container').classList.toggle('drop-down');
+        document.querySelector('.design__title').classList.toggle('design__title2');
+        //agregar y eliminar clases a los demas
+        document.querySelector('.fill__form').classList.add('drop-down');
+        document.querySelector('.share__form').classList.add('drop-down');
+        document.querySelector('.fill__title').classList.remove('fill__title2');
+        document.querySelector('.share__title').classList.remove('share__title2');
 
 
-  } else if (event.currentTarget.classList.contains('fill__title')) {
-    document.querySelector('.fill__form').classList.toggle('drop-down');
-    document.querySelector('.fill__title').classList.toggle('fill__title2');
+    } else if (event.currentTarget.classList.contains('fill__title')) {
+        document.querySelector('.fill__form').classList.toggle('drop-down');
+        document.querySelector('.fill__title').classList.toggle('fill__title2');
 
-    //agregar y elimir clases a los demas
-    document.querySelector('.share__form').classList.add('drop-down');
-    document.querySelector('.desing__form--container').classList.add('drop-down');
-    document.querySelector('.design__title').classList.remove('design__title2');
-    document.querySelector('.share__title').classList.remove('share__title2');
+        //agregar y elimir clases a los demas
+        document.querySelector('.share__form').classList.add('drop-down');
+        document.querySelector('.desing__form--container').classList.add('drop-down');
+        document.querySelector('.design__title').classList.remove('design__title2');
+        document.querySelector('.share__title').classList.remove('share__title2');
 
-  } else if (event.currentTarget.classList.contains('share__title')) {
-    document.querySelector('.share__form').classList.toggle('drop-down');
-    document.querySelector('.share__title').classList.toggle('share__title2');
+    } else if (event.currentTarget.classList.contains('share__title')) {
+        document.querySelector('.share__form').classList.toggle('drop-down');
+        document.querySelector('.share__title').classList.toggle('share__title2');
 
-    //agregar y elimir clases a los demas
-    document.querySelector('.desing__form--container').classList.add('drop-down');
-    document.querySelector('.design__title').classList.remove('design__title2');
-    document.querySelector('.fill__form').classList.add('drop-down');
-    document.querySelector('.fill__title').classList.remove('fill__title2');
+        //agregar y elimir clases a los demas
+        document.querySelector('.desing__form--container').classList.add('drop-down');
+        document.querySelector('.design__title').classList.remove('design__title2');
+        document.querySelector('.fill__form').classList.add('drop-down');
+        document.querySelector('.fill__title').classList.remove('fill__title2');
 
 
-  }
+    }
 }
 
 for (const buttonForm of titleForm) {
-  buttonForm.addEventListener('click', ShowOrHide);
+    buttonForm.addEventListener('click', ShowOrHide);
 }
 
 
@@ -117,12 +117,12 @@ const iconLinkedin = document.querySelector('.item3');
 const iconGithub = document.querySelector('.item4');
 //handler
 function showMailIcon(event) {
-  if (inputMail.value.length !== 0) {
-    iconMail.classList.remove('supersecret');
-    linkMail.href = 'mailto:' + inputMail.value;
-  } else {
-    iconMail.classList.add('supersecret');
-  }
+    if (inputMail.value.length !== 0) {
+        iconMail.classList.remove('supersecret');
+        linkMail.href = 'mailto:' + inputMail.value;
+    } else {
+        iconMail.classList.add('supersecret');
+    }
 }
 
 function showPhoneIcon(event) {
@@ -167,32 +167,32 @@ const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 
 function resetmood(event) {
-  defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
-  profilePreview.style.backgroundImage= '';
-  //colocar paleta por defecto
-  selectedRadio.classList.remove('palette1');
-  selectedRadio.classList.remove('palette2');
-  selectedRadio.classList.remove('palette3');
-  selectedRadio.classList.remove('palette4');
-  selectedRadio.classList.remove('palette5');
-  radio1.checked = true;
+    defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
+    profilePreview.style.backgroundImage = '';
+    //colocar paleta por defecto
+    selectedRadio.classList.remove('palette1');
+    selectedRadio.classList.remove('palette2');
+    selectedRadio.classList.remove('palette3');
+    selectedRadio.classList.remove('palette4');
+    selectedRadio.classList.remove('palette5');
+    radio1.checked = true;
 
 
-  //Que los campos del formulario esten vacios
-  inputName.value = '';
-  inputJob.value = '';
-  name.innerHTML = 'Nombre Apellido';
-  job.innerHTML = 'front-end developer';
+    //Que los campos del formulario esten vacios
+    inputName.value = '';
+    inputJob.value = '';
+    name.innerHTML = 'Nombre Apellido';
+    job.innerHTML = 'front-end developer';
 
-  inputMail.value = '';
-  inputPhone.value = '';
-  inputLinkedin.value = '';
-  inputGithub.value = '';
+    inputMail.value = '';
+    inputPhone.value = '';
+    inputLinkedin.value = '';
+    inputGithub.value = '';
 
-  iconMail.classList.add('supersecret');
-  iconPhone.classList.add('supersecret');
-  iconLinkedin.classList.add('supersecret');
-  iconGithub.classList.add('supersecret');
+    iconMail.classList.add('supersecret');
+    iconPhone.classList.add('supersecret');
+    iconLinkedin.classList.add('supersecret');
+    iconGithub.classList.add('supersecret');
 }
 
 btnReset.addEventListener('click', resetmood);
@@ -203,32 +203,17 @@ profileImage.style.backgroundImage = `url(${defaultUrlImage})`;
 const btnCardCreation = document.querySelector('.create__button');
 
 const userDefault = {
-  "palette": 1,
-  "name": "Nombre Apellidos",
-  "job": "front-end developer",
-  "phone": "",
-  "email": "",
-  "linkedin": "",
-  "github": "",
-  "photo": defaultUrlImage
+    "palette": 1,
+    "name": "Nombre Apellidos",
+    "job": "front-end developer",
+    "phone": "",
+    "email": "",
+    "linkedin": "",
+    "github": "",
+    "photo": defaultUrlImage
 }
-/* const userFilled = {
-  "palette": 1,
-  "name": inputName.value,
-  "job": inputJob.value,
-  "phone": inputPhone,
-  "email": inputMail,
-  "linkedin": inputLinkedin,
-  "github": inputGithub,
-  "photo": defaultUrlImage,
-} */
-const form = document.querySelector('.create__card');
 
-function  notSend(event){
-  event.preventDefault();
-}
-function sendData(json){
-  const userFilled = {
+const userFilled = {
     "palette": 1,
     "name": "María García",
     "job": "Front-end developer",
@@ -236,18 +221,27 @@ function sendData(json){
     "email": "mariagar@example.com",
     "linkedin": "mariagar",
     "github": "mariagar",
-    "photo": "data:image/png;base64,2342ba..."
-  }
-
-    fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
-      method: 'POST',
-      body: JSON.stringify(json),
-      headers: {
-        'content-type': 'application/json'
-      }})
-    .then(response => response.json())
-    .then(data => console.log(data))
+    "photo": defaultUrlImage
 }
 
-form.addEventListener('submit',notSend)
+const form = document.querySelector('.create__card');
+
+function notSend(event) {
+    event.preventDefault();
+}
+
+function sendData(json) {
+
+    fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+            method: 'POST',
+            body: JSON.stringify(userFilled),
+            headers: {
+                'content-type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+}
+
+form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
