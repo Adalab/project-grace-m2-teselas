@@ -213,6 +213,18 @@ const userDefault = {
     "photo": defaultUrlImage
 }
 
+/* const userFilled = {
+    "palette": 1,
+    "name": "María García",
+    "job": "Front-end developer",
+    "phone": "+34 666666666",
+    "email": "mariagar@example.com",
+    "linkedin": "mariagar",
+    "github": "mariagar",
+    "photo": defaultUrlImage
+}
+ */
+
 const userFilled = {
     "palette": 1,
     "name": "María García",
