@@ -213,28 +213,17 @@ const userDefault = {
     "photo": defaultUrlImage
 }
 
+// Éste se puede borrar ¿?
 /* const userFilled = {
-    "palette": 1,
-    "name": "María García",
-    "job": "Front-end developer",
-    "phone": "+34 666666666",
-    "email": "mariagar@example.com",
-    "linkedin": "mariagar",
-    "github": "mariagar",
-    "photo": defaultUrlImage
-}
- */
-
-const userFilled = {
-    "palette": 1,
-    "name": "María García",
-    "job": "Front-end developer",
-    "phone": "+34 666666666",
-    "email": "mariagar@example.com",
-    "linkedin": "mariagar",
-    "github": "mariagar",
-    "photo": defaultUrlImage
-}
+  "palette": 1,
+  "name": "María García",
+  "job": "Front-end developer",
+  "phone": "+34 666666666",
+  "email": "mariagar@example.com",
+  "linkedin": "mariagar",
+  "github": "mariagar",
+  "photo": defaultUrlImage
+} */
 
 const form = document.querySelector('.create__card');
 
@@ -243,6 +232,16 @@ function notSend(event) {
 }
 
 function sendData(json) {
+    const userFilled = {}
+
+    userFilled.palette = 1;
+    userFilled.name = inputName.value;
+    userFilled.job = inputJob.value;
+    userFilled.phone = inputPhone.value;
+    userFilled.email = inputMail.value;
+    userFilled.linkedin = inputLinkedin.value;
+    userFilled.github = inputGithub.value;
+    userFilled.photo = fr.result;
 
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
             method: 'POST',
@@ -257,3 +256,21 @@ function sendData(json) {
 
 form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
+
+function checkData() {
+
+    const userFilled = {}
+
+    userFilled.palette = 1;
+    userFilled.name = inputName.value;
+    userFilled.job = inputJob.value;
+    userFilled.phone = inputPhone.value;
+    userFilled.email = inputMail.value;
+    userFilled.linkedin = inputLinkedin.value;
+    userFilled.github = inputGithub.value;
+    userFilled.photo = defaultUrlImage;
+
+    console.log(userFilled);
+    console.log(inputName.value);
+}
+btnCardCreation.addEventListener('click', checkData);
