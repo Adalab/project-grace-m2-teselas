@@ -218,7 +218,9 @@ function resetmood(event) {
     inputGithub.value = '';
 
     //localStorage
+    localStorage.removeItem('color-input');
     localStorage.removeItem('name-input');
+    localStorage.removeItem('image-input');
     localStorage.removeItem('job-input');
     localStorage.removeItem('mail-input');
     localStorage.removeItem('phone-input');
