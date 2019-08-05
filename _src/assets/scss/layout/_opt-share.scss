@@ -66,12 +66,11 @@
     font-family: $font-family--principal;
     font-weight: $weight--semi-bold;
     text-decoration: none;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
 .create__button-container {
     padding-bottom: 30px;
+    margin-bottom:0;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -90,6 +89,7 @@
 .container__button-twitter {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .share__button-twitter {
@@ -103,6 +103,11 @@
     align-items: center;
     justify-content: space-evenly;
     align-self: center;
+}
+.created--message {
+  @include txt18($color--text);
+  padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 .twitter__icon {
