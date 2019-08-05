@@ -38,6 +38,7 @@ const radio5 = document.querySelector('.radio__palette5');
 
 const selectedRadio = document.querySelector('.card__box');
 
+let selectedPalette = "palette1";
 function changeColor(event) {
     selectedRadio.classList.remove('palette1');
     selectedRadio.classList.remove('palette2');
@@ -46,6 +47,7 @@ function changeColor(event) {
     selectedRadio.classList.remove('palette5');
 
     selectedRadio.classList.add(event.currentTarget.value);
+    selectedPalette = event.currentTarget.value
 }
 
 radio1.addEventListener('click', changeColor);
@@ -176,7 +178,7 @@ function resetmood(event) {
     selectedRadio.classList.remove('palette4');
     selectedRadio.classList.remove('palette5');
     radio1.checked = true;
-
+    selectedPalette = "palette1";
 
     //Que los campos del formulario esten vacios
     inputName.value = '';
@@ -233,8 +235,7 @@ function notSend(event) {
 
 function sendData(json) {
     const userFilled = {}
-
-    userFilled.palette = 1;
+    userFilled.palette = selectedPalette.replace('palette', '');
     userFilled.name = inputName.value;
     userFilled.job = inputJob.value;
     userFilled.phone = inputPhone.value;
@@ -261,7 +262,7 @@ function checkData() {
 
     const userFilled = {}
 
-    userFilled.palette = 1;
+    userFilled.palette = selectedPalette.replace('palette', '');
     userFilled.name = inputName.value;
     userFilled.job = inputJob.value;
     userFilled.phone = inputPhone.value;
