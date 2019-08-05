@@ -246,21 +246,3 @@ function sendData(json) {
 
 form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
-
-function checkData() {
-
-    const userFilled = {}
-
-    userFilled.palette = selectedPalette.replace('palette', '');
-    userFilled.name = inputName.value;
-    userFilled.job = inputJob.value;
-    userFilled.phone = inputPhone.value;
-    userFilled.email = inputMail.value;
-    userFilled.linkedin = inputLinkedin.value;
-    userFilled.github = inputGithub.value;
-    userFilled.photo = defaultUrlImage;
-
-    console.log(userFilled);
-    console.log(inputName.value);
-}
-btnCardCreation.addEventListener('click', checkData);
