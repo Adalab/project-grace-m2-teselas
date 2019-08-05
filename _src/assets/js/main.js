@@ -196,6 +196,7 @@ defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 function resetmood(event) {
     defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
     profilePreview.style.backgroundImage = '';
+    newImage = defaultUrlImage;
     //colocar paleta por defecto
     selectedRadio.classList.remove('palette1');
     selectedRadio.classList.remove('palette2');
@@ -264,7 +265,7 @@ function sendData(json) {
     userFilled.email = inputMail.value;
     userFilled.linkedin = inputLinkedin.value;
     userFilled.github = inputGithub.value;
-    userFilled.photo = fr.result;
+    userFilled.photo = newImage;
 
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
             method: 'POST',
@@ -279,6 +280,8 @@ function sendData(json) {
 
 form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
+
+
 
 //Recargar la pagina con los datos de localStorage
 function reloadPage () {
@@ -326,6 +329,11 @@ function reloadPage () {
     radio5.checked = true;
     selectedRadio.classList.add('palette5');
     selectedPalette = 'palette5';
+  }
+  if (localStorage.getItem('image-input')){
+    newImage =localStorage.getItem('image-input'); //revisar
+  profileImage.style.backgroundImage = `url(${localStorage.getItem('image-input')})`;
+  profilePreview.style.backgroundImage = `url(${localStorage.getItem('image-input')})`;
   }
 }
 

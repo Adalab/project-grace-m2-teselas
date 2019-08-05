@@ -3,8 +3,9 @@
 const fr = new FileReader();
 const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
-const profilePreview = document.querySelector('.js__profile-preview');
+let profileImage = document.querySelector('.js__profile-image');
+let profilePreview = document.querySelector('.js__profile-preview');
+let newImage ='';
 
 
 /**
@@ -30,8 +31,10 @@ function writeImage() {
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado
    */
+  newImage = fr.result; //revisar ojoo
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  localStorage.setItem('image-input',newImage);
 }
 
 
