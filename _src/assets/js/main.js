@@ -17,6 +17,7 @@ function fillName(event) {
     }
 }
 
+
 function fillJob(event) {
   const newJob =event.currentTarget.value;
     if (inputJob.value.length === 0) {
@@ -269,3 +270,37 @@ function sendData(json) {
 
 form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
+
+//Recargar la pagina con los datos de localStorage
+function reloadPage () {
+  if (localStorage.getItem('name-input')) {
+    inputName.value =localStorage.getItem('name-input');
+    name.innerHTML = localStorage.getItem('name-input');
+  }
+  if (localStorage.getItem('job-input')) {
+    inputJob.value =localStorage.getItem('job-input');
+    job.innerHTML = localStorage.getItem('job-input');
+  }
+  if (localStorage.getItem('mail-input')) {
+    inputMail.value =localStorage.getItem('mail-input');
+    linkMail.href = 'mailto:' + localStorage.getItem('mail-input');
+    iconMail.classList.remove('supersecret');
+  }
+  if (localStorage.getItem('phone-input')) {
+    inputPhone.value =localStorage.getItem('phone-input');
+    linkPhone.href = 'tel:' + localStorage.getItem('phone-input');
+    iconPhone.classList.remove('supersecret');
+  }
+  if (localStorage.getItem('linkedin-input')) {
+    inputLinkedin.value =localStorage.getItem('linkedin-input');
+    linkLinkedin.href = 'https://www.linkedin.com/in/' + localStorage.getItem('linkedin-input');
+    iconLinkedin.classList.remove('supersecret');
+  }
+  if (localStorage.getItem('github-input')) {
+    inputGithub.value =localStorage.getItem('linkedin-input');
+    linkGithub.href = 'https://github.com/' + localStorage.getItem('github-input');
+    iconGithub.classList.remove('supersecret');
+  }
+}
+
+reloadPage ();
