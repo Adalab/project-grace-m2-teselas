@@ -310,6 +310,23 @@ function reloadPage () {
     linkGithub.href = 'https://github.com/' + localStorage.getItem('github-input');
     iconGithub.classList.remove('supersecret');
   }
+  if (localStorage.getItem('color-input')==='palette2') {
+    radio2.checked = true;
+    selectedRadio.classList.add('palette2');
+    selectedPalette = 'palette2';
+  }else if (localStorage.getItem('color-input')==='palette3') {
+    radio3.checked = true;
+    selectedRadio.classList.add('palette3');
+    selectedPalette = 'palette3';
+  }else if (localStorage.getItem('color-input')==='palette4') {
+    radio4.checked = true;
+    selectedRadio.classList.add('palette4');
+    selectedPalette = 'palette4';
+  }else if (localStorage.getItem('color-input')==='palette5') {
+    radio5.checked = true;
+    selectedRadio.classList.add('palette5');
+    selectedPalette = 'palette5';
+  }
 }
 
 reloadPage ();
