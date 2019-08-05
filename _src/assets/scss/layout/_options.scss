@@ -23,11 +23,6 @@
     cursor: pointer;
 }
 
-.created--message {
-  @include txt18($color--text);
-}
-
-
 .options__box,
 .fill__form,
 .share__box{

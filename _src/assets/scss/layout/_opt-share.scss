@@ -66,15 +66,11 @@
     font-family: $font-family--principal;
     font-weight: $weight--semi-bold;
     text-decoration: none;
-    margin-top: 5px;
-    margin-bottom: 10px;
 }
 
-.create__button-container,
-.card__created--info {
-    border-bottom: 1px solid $color--footer--border;
+.create__button-container {
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom:0;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -83,9 +79,17 @@
   background-color: #d5d5d5;
 }
 .card__created--info {
-    flex-direction: column;
-    border: none;
+    border-top: 1px solid $color--footer--border;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: center;
     margin-bottom: 0;
+}
+
+.container__button-twitter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .share__button-twitter {
@@ -99,6 +103,11 @@
     align-items: center;
     justify-content: space-evenly;
     align-self: center;
+}
+.created--message {
+  @include txt18($color--text);
+  padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 .twitter__icon {
