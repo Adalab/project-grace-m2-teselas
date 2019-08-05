@@ -216,6 +216,15 @@ function resetmood(event) {
     inputLinkedin.value = '';
     inputGithub.value = '';
 
+    //localStorage
+    localStorage.removeItem('name-input');
+    localStorage.removeItem('job-input');
+    localStorage.removeItem('mail-input');
+    localStorage.removeItem('phone-input');
+    localStorage.removeItem('linkedin-input');
+    localStorage.removeItem('github-input');
+
+    //Anadir clase supersecret
     iconMail.classList.add('supersecret');
     iconPhone.classList.add('supersecret');
     iconLinkedin.classList.add('supersecret');
