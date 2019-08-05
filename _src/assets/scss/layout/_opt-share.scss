@@ -71,9 +71,7 @@
 }
 
 .create__button-container {
-    border-bottom: 1px solid $color--footer--border;
     padding-bottom: 30px;
-    margin-bottom: 30px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -82,11 +80,10 @@
   background-color: #d5d5d5;
 }
 .card__created--info {
-    border-bottom: 1px solid $color--footer--border;
+    border-top: 1px solid $color--footer--border;
     padding-bottom: 30px;
     margin-bottom: 30px;
     text-align: center;
-    border: none;
     margin-bottom: 0;
 }
 

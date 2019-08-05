@@ -89,16 +89,12 @@ function ShowOrHide(event) {
     document.querySelector('.design__title').classList.remove('design__title2');
     document.querySelector('.fill__form').classList.add('drop-down');
     document.querySelector('.fill__title').classList.remove('fill__title2');
-
-
   }
 }
 
 for (const buttonForm of titleForm) {
   buttonForm.addEventListener('click', ShowOrHide);
 }
-
-
 
 // Escribir en los inputs de redes sociales y que aparezcan los iconos correpondientes enlazados
 //seleccionar y declarar constantes
@@ -158,11 +154,8 @@ inputPhone.addEventListener('keyup', showPhoneIcon);
 inputLinkedin.addEventListener('keyup', showLinkedinIcon);
 inputGithub.addEventListener('keyup', showGithubIcon);
 
-
 //reset-btn
-
 const btnReset = document.querySelector('.reset__button');
-
 
 const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
@@ -221,7 +214,7 @@ function notSend(event) {
 }
 const twitterSection = document.querySelector('.card__created--info');
 const showURL = document.querySelector('.link__card');
-
+const btnContainer = document.querySelector('.create__button-container');
 let userFilled = {};
 function sendData(json) {
   // const userFilled = {}
@@ -249,7 +242,11 @@ function sendData(json) {
         showURL.innerHTML= `${data.cardURL}`;
         showURL.href = `${data.cardURL}`;
       } else {
-        showURL.innerHTML= `Por favor, introduce los datos de forma correcta en los campos solicitados`;
+        const warning = document.createElement('p');
+        const warningContent = document.createTextNode('Por favor, revisa que todos los campos estén correctamente completados');
+        warning.appendChild(warningContent);
+        btnContainer.appendChild(warning);
+        // showURL.innerHTML= ``;
       }
     });
 }
