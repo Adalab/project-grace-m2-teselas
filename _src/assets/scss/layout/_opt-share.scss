@@ -70,8 +70,7 @@
     margin-bottom: 10px;
 }
 
-.create__button-container,
-.card__created--info {
+.create__button-container {
     border-bottom: 1px solid $color--footer--border;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -83,9 +82,17 @@
   background-color: #d5d5d5;
 }
 .card__created--info {
-    flex-direction: column;
+    border-bottom: 1px solid $color--footer--border;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: center;
     border: none;
     margin-bottom: 0;
+}
+
+.container__button-twitter {
+  display: flex;
+  justify-content: center;
 }
 
 .share__button-twitter {
