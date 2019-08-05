@@ -221,9 +221,9 @@ const form = document.querySelector('.create__card');
 function notSend(event) {
     event.preventDefault();
 }
-
+let userFilled = {};
 function sendData(json) {
-    const userFilled = {}
+    // const userFilled = {}
     userFilled.palette = selectedPalette.replace('palette', '');
     userFilled.name = inputName.value;
     userFilled.job = inputJob.value;
@@ -246,3 +246,10 @@ function sendData(json) {
 
 form.addEventListener('submit', notSend)
 btnCardCreation.addEventListener('click', sendData);
+
+//Al hacer click en el botón de crear tarjeta: SI está todo bien (el btn se vuelve gris, aparece la sección de twitter y se escribe la URL en ella); PERO SI está mal algo (sale mensaje de error)
+
+// function createCard (){
+//   if (success === true)
+// }
+// btnCardCreation.addEventListener('click', createCard);
