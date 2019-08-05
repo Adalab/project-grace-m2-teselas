@@ -223,6 +223,19 @@ function resetMood(event) {
     iconPhone.classList.add('supersecret');
     iconLinkedin.classList.add('supersecret');
     iconGithub.classList.add('supersecret');
+
+    //Hacer el botón naranja de nuevo y ocultar lo de twitter
+    btnCardCreation.classList.remove('grey__create__button');
+    twitterSection.classList.add('drop-down');
+
+
+    //Desplegable
+    document.querySelector('.fill__form').classList.add('drop-down');
+    document.querySelector('.share__form').classList.add('drop-down');
+    document.querySelector('.fill__title').classList.remove('fill__title2');
+    document.querySelector('.share__title').classList.remove('share__title2');
+    document.querySelector('.desing__form--container').classList.remove('drop-down');
+    document.querySelector('.design__title').classList.add('design__title2');
 }
 
 btnReset.addEventListener('click', resetMood);
@@ -246,6 +259,7 @@ const form = document.querySelector('.create__card');
 function notSend(event) {
     event.preventDefault();
 }
+
 const twitterSection = document.querySelector('.card__created--info');
 const showURL = document.querySelector('.link__card');
 const btnContainer = document.querySelector('.create__button-container');
@@ -288,7 +302,7 @@ function sendData(json) {
         });
 }
 
-form.addEventListener('submit', notSend)
+form.addEventListener('submit', notSend);
 btnCardCreation.addEventListener('click', sendData);
 
 //Recargar la pagina con los datos de localStorage
