@@ -2,13 +2,7 @@
 
 Proyecto Awesome Profile Cards
 
-Resumen
-
-http://beta.adalab.es/grace-m2-teselas/assets/images/logo-teselas-nomargin.png
-
 En este proyecto vamos a realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. Será una aplicación web interactiva que podéis usar para crear vuestras propias tarjetas de visita profesionales.
-
-### Especificaciones
 
 #### En el desarrollo de esta aplicación web usaremos las siguientes tecnologías:
 
@@ -16,7 +10,7 @@ En este proyecto vamos a realizar una aplicación web que nos permite crear una 
 
 -Maquetación usando CSS avanzado flex y grid
 
--Uso de *mediaqueries* para que el diseño sea adaptable al dispositivo usando la estrategia mobile first
+-Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la estrategia mobile first
 
 -Gestión de eventos* en el navegador
 
