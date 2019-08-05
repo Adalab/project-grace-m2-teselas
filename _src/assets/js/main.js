@@ -10,6 +10,7 @@ function fillName(event) {
   const newName =event.currentTarget.value;
     if (inputName.value.length === 0) {
         name.innerHTML = 'Nombre Apellido';
+        localStorage.removeItem('name-input');
     } else {
         name.innerHTML = newName;
         localStorage.setItem('name-input',newName);
@@ -20,6 +21,7 @@ function fillJob(event) {
   const newJob =event.currentTarget.value;
     if (inputJob.value.length === 0) {
         job.innerHTML = 'front-end developer';
+        localStorage.removeItem('job-input');
     } else {
         job.innerHTML = newJob;
         localStorage.setItem('job-input',newJob);
@@ -56,6 +58,7 @@ function changeColor(event) {
 
     selectedPalette = newColor;
     localStorage.setItem('color-input',newColor);
+
 
 }
 
@@ -135,6 +138,7 @@ function showMailIcon(event) {
         localStorage.setItem('mail-input',newMail);
     } else {
         iconMail.classList.add('supersecret');
+        localStorage.removeItem('mail-input');
     }
 }
 
@@ -146,6 +150,7 @@ function showPhoneIcon(event) {
         localStorage.setItem('phone-input',newPhone);
     } else {
         iconPhone.classList.add('supersecret');
+        localStorage.removeItem('phone-input');
     }
 }
 
@@ -157,6 +162,7 @@ function showLinkedinIcon(event) {
         localStorage.setItem('linkedin-input',newLinkedin);
     } else {
         iconLinkedin.classList.add('supersecret');
+        localStorage.removeItem('linkedin-input');
     }
 }
 
@@ -168,6 +174,7 @@ function showGithubIcon(event) {
         localStorage.setItem('github-input',newGitHub);
     } else {
         iconGithub.classList.add('supersecret');
+        localStorage.removeItem('github-input');
     }
 }
 //listener
