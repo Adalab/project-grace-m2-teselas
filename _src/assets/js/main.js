@@ -219,6 +219,9 @@ const form = document.querySelector('.create__card');
 function notSend(event) {
   event.preventDefault();
 }
+const twitterSection = document.querySelector('.card__created--info');
+const showURL = document.querySelector('.link__card');
+
 let userFilled = {};
 function sendData(json) {
   // const userFilled = {}
@@ -242,7 +245,13 @@ function sendData(json) {
     .then(data => {console.log(data);
       if (data.success === true) {
         btnCardCreation.classList.add('grey__create__button');
-      }});
+        twitterSection.classList.remove('drop-down');
+        showURL.innerHTML= `${data.cardURL}`;
+        showURL.href = `${data.cardURL}`;
+      } else {
+        showURL.innerHTML= `Por favor, introduce los datos de forma correcta en los campos solicitados`;
+      }
+    });
 }
 
 form.addEventListener('submit', notSend);
