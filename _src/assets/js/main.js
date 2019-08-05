@@ -171,6 +171,7 @@ defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 function resetmood(event) {
     defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
     profilePreview.style.backgroundImage = '';
+
     //colocar paleta por defecto
     selectedRadio.classList.remove('palette1');
     selectedRadio.classList.remove('palette2');
@@ -214,18 +215,6 @@ const userDefault = {
     "github": "",
     "photo": defaultUrlImage
 }
-
-// Éste se puede borrar ¿?
-/* const userFilled = {
-  "palette": 1,
-  "name": "María García",
-  "job": "Front-end developer",
-  "phone": "+34 666666666",
-  "email": "mariagar@example.com",
-  "linkedin": "mariagar",
-  "github": "mariagar",
-  "photo": defaultUrlImage
-} */
 
 const form = document.querySelector('.create__card');
 
