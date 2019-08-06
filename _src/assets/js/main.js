@@ -227,7 +227,8 @@ function resetMood(event) {
     //Hacer el botón naranja de nuevo y ocultar lo de twitter
     btnCardCreation.classList.remove('grey__create__button');
     twitterSection.classList.add('drop-down');
-
+    //Para activar de nuevo el botón al resetear el form
+    btnCardCreation.disabled = false;
 
     //Desplegable
     document.querySelector('.fill__form').classList.add('drop-down');
@@ -236,6 +237,9 @@ function resetMood(event) {
     document.querySelector('.share__title').classList.remove('share__title2');
     document.querySelector('.desing__form--container').classList.remove('drop-down');
     document.querySelector('.design__title').classList.add('design__title2');
+
+    //Función para eliminar el valor del input file de la foto subida
+    resetInputFile();
 }
 
 btnReset.addEventListener('click', resetMood);
@@ -286,19 +290,18 @@ function sendData(json) {
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-
             /*Al hacer click en el botón de crear tarjeta: SI está todo bien (el btn se vuelve gris, aparece la sección de twitter y se escribe la URL en ella); PERO SI está mal algo (sale mensaje de error)*/
 
             if (data.success === true) {
                 btnCardCreation.classList.add('grey__create__button');
+                btnCardCreation.disabled = 'disabled';
                 twitterSection.classList.remove('drop-down');
                 showURL.innerHTML = `${data.cardURL}`;
                 showURL.href = `${data.cardURL}`;
                 const twitterText = `Hey there! :) Check out my new AWESOME profile card: ${data.cardURL}`;
                 btnTwitter.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(twitterText);
-
-            } else {}
+                resetInputFile();
+            }
         });
 }
 
