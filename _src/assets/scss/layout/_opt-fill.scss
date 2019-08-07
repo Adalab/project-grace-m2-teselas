@@ -50,6 +50,9 @@
 ::placeholder {
     color: $color--placeholder;
 }
+.error::placeholder {
+  color:red;
+}
 
 .photo__button {
     @include txt14($color--white);

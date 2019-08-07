@@ -1,5 +1,18 @@
 'use strict';
 
+const inputs = document.querySelectorAll('.field__fill');
+
+function errorMessage () {
+
+  for (const item of inputs) {
+      if (item.value === '') {
+        item.classList.add('error');
+        // item.placeholder = 'Por favor, rellena este campo';
+
+  }}}
+
+
+
 //Rellenar la tarjeta con los datos del input (name y job)
 const inputName = document.querySelector('.field__fill-name');
 const inputJob = document.querySelector('.field__fill-job');
@@ -240,6 +253,14 @@ function resetMood(event) {
 
   //Función para eliminar el valor del input file de la foto subida
   resetInputFile();
+
+  //resetear los placeholders
+  for (const item of inputs) {
+    if (item.classList.contains('error')) {
+      item.classList.remove('error');
+
+
+}}
 }
 
 btnReset.addEventListener('click', resetMood);
@@ -280,6 +301,7 @@ function sendData(json) {
   userFilled.linkedin = inputLinkedin.value;
   userFilled.github = inputGithub.value;
   userFilled.photo = newImage;
+  errorMessage();
 
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
