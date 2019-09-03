@@ -5,11 +5,10 @@ const inputs = document.querySelectorAll('.field__fill');
 function errorMessage () {
 
   for (const item of inputs) {
-      if (item.value === '') {
-        item.classList.add('error');
-        // item.placeholder = 'Por favor, rellena este campo';
-
-  }}}
+    if (item.value === '') {
+      item.classList.add('error');
+    }
+  }}
 
 
 
@@ -138,7 +137,7 @@ const iconPhone = document.querySelector('.item1');
 const iconLinkedin = document.querySelector('.item3');
 const iconGithub = document.querySelector('.item4');
 //handler
-function showMailIcon(event) {
+function showMailIcon() {
   const newMail = inputMail.value;
   if (inputMail.value.length !== 0) {
     iconMail.classList.remove('supersecret');
@@ -150,7 +149,7 @@ function showMailIcon(event) {
   }
 }
 
-function showPhoneIcon(event) {
+function showPhoneIcon() {
   const newPhone = inputPhone.value;
   if (inputPhone.value.length !== 0) {
     iconPhone.classList.remove('supersecret');
@@ -162,7 +161,7 @@ function showPhoneIcon(event) {
   }
 }
 
-function showLinkedinIcon(event) {
+function showLinkedinIcon() {
   const newLinkedin = inputLinkedin.value;
   if (inputLinkedin.value.length !== 0) {
     iconLinkedin.classList.remove('supersecret');
@@ -174,7 +173,7 @@ function showLinkedinIcon(event) {
   }
 }
 
-function showGithubIcon(event) {
+function showGithubIcon() {
   const newGitHub = inputGithub.value;
   if (inputGithub.value.length !== 0) {
     iconGithub.classList.remove('supersecret');
@@ -197,7 +196,7 @@ const btnReset = document.querySelector('.reset__button');
 const defaultImage = document.querySelector('.js__profile-image');
 defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
 
-function resetMood(event) {
+function resetMood() {
   defaultImage.style.backgroundImage = `url(${defaultUrlImage})`;
   profilePreview.style.backgroundImage = '';
   newImage = defaultUrlImage;
@@ -291,7 +290,7 @@ const btnContainer = document.querySelector('.create__button-container');
 const btnTwitter = document.querySelector('.share__button-twitter');
 let userFilled = {};
 
-function sendData(json) {
+function sendData() {
   // const userFilled = {}
   userFilled.palette = selectedPalette.replace('palette', '');
   userFilled.name = inputName.value;
